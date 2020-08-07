@@ -37,8 +37,8 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
     
 [**sudo-fbcp-ili9341-result.txt**](sudo-fbcp-ili9341-result.txt) shows the result of running the driver.
 
-The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
-I intend to test another display from waveshare, and test it using a Raspberry Pi 4. This second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right at the very top, above.
+The result surprised me in the responsiveness of the LCD obtained, when compared to using the same display with the Waveshare driver on kernel 4.19.
+I intend to test the other type C display from Waveshare on a Raspberry Pi 4. This second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right at the very top, above.
 
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: <br>$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. <br>was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 <br>
