@@ -38,7 +38,11 @@ I intend to test another display from waveshare
     $ git clone https://github.com/juj/fbcp-ili9341.git
     $ cd fbcp-ili9341
     $ mkdir build
-
+    $ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON -DBACKLIGHT_CONTROL=ON -DDISPLAY_INVERT_COLORS=ON -DSTATISTICS=0 ..
+    $ make -j
+    $ cd fbcp-ili9341
+    $ sudo ./fbcp-ili9341
+    
 Replace the rtusb_dev_id.c inside the common folder with the file version in this archive
 
     $ make
