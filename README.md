@@ -32,7 +32,7 @@ I decided to try a new approach, and use the FBCP SPI driver at [**Kpishere**](h
 The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
 I intend to test another display from waveshare, and test it using a Raspberyy Pi 4. 
 
-The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. was used to build the driver, and shows inverted colours. The thisrd picture and the fifth picture is with the corrected colours.
+The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 <br>
 <p align="center">
 <img src="images/Pi3BPWave35Bv2-1.jpg" width="300" />  
