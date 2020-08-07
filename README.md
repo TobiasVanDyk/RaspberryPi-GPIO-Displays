@@ -29,6 +29,8 @@ I decided to try a new approach, and use the FBCP SPI driver at [**Kpishere**](h
 
     $ sudo /home/pi/fbcp-ili9341/build/fbcp-ili9341 &
     
+[**sudo-fbcp-ili9341-result.txt**](sudo-fbcp-ili9341-result.txt) shows the result of running the driver.
+
 The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
 I intend to test another display from waveshare, and test it using a Raspberyy Pi 4. 
 
