@@ -32,3 +32,21 @@ To start at boot, edit the /etc/rc.local in sudo mode, and add a line:
 The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
 I intend to test another display from waveshare
 
+### Steps to install in Mint 19.1:
+
+    $ sudo apt-get install git build-essential linux-headers-generic
+    $ sudo apt-get install make gcc libelf-dev
+    $ git clone -b port-to-4.15 https://github.com/kaduke/Netgear-A6210
+    $ cd Netgear-A6210
+
+Replace the rtusb_dev_id.c inside the common folder with the file version in this archive
+
+    $ make
+    $ sudo make install
+    $ sudo reboot
+
+After the reboot:
+
+    $ sudo service network-manager restart
+    
+And then wait a few seconds.
