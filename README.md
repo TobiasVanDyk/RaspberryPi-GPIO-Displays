@@ -60,7 +60,7 @@ The first image is the result of the first run of the driver, and tries to run t
 <br>
     
 ### Raspberry Pi 4 (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
-The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted.
+The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted, and the cmake option -DDISPLAY_INVERT_COLORS=ON will be removed.
 
 <br>
 <p align="center">
