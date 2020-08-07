@@ -1,9 +1,10 @@
 # RaspberryPi-GPIO-Displays
 
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi.
-The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+, for the description below.
+The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+ with a type Brev2 LCD, and a Raspberry Pi 4 (4GB) with a type C LCD, for the description below.
 
-I have previously, and over many days, tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C, display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), without success with the new Raspberry Pi 5.4 kernel. (Note that all these drivers work without problems with the previous 4.19 kernel.) The LCD used for the test below is the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below. 
+I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), without success with the new Raspberry Pi 5.4 kernel. (Note that all these drivers work without problems with the previous 4.19 kernel.) The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
+
 
 <br>
 <p align="center">
@@ -38,9 +39,9 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
 [**sudo-fbcp-ili9341-result.txt**](sudo-fbcp-ili9341-result.txt) shows the result of running the driver.
 
 The result surprised me in the responsiveness of the LCD obtained, when compared to using the same display with the Waveshare driver on kernel 4.19.
-I intend to test the other type C display from Waveshare on a Raspberry Pi 4. This second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right at the very top, above.
+For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
 
-###Raspberry Pi 3B+ and the Waveshare 3.5# B revision 2 LC:
+### Raspberry Pi 3B+ and the Waveshare 3.5# B revision 2 LC:
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: <br>$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. <br>was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 
 <br>
@@ -57,7 +58,7 @@ The first image is the result of the first run of the driver, and tries to run t
 <img src="images/Pi3BPWave35Bv2-4.jpg" width="400" />  
 <br>
     
-###Raspberry Pi 4 (4GB) and the Waveshare 3.5" C LCD:
+### Raspberry Pi 4 (4GB) and the Waveshare 3.5" C LCD:
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted.
 
 <br>
