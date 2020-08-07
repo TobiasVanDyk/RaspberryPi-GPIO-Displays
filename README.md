@@ -55,4 +55,4 @@ The first image is the result of the first run of the driver, and tries to run t
 <img src="images/Pi3BPWave35Bv2-4.jpg" width="400" />  
 <br>
 
-Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**] (https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production.
+Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production.
