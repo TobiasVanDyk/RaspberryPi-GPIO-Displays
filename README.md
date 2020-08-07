@@ -9,22 +9,25 @@ I decided to try a completely new apprtoach, and use the FBCP SPI driver at [**K
 
 I used the following to make the driver:
 
-sudo apt-get install cmake
-git clone https://github.com/juj/fbcp-ili9341.git
-cd fbcp-ili9341
-mkdir build
-cd build
-cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON -DBACKLIGHT_CONTROL=ON -DDISPLAY_INVERT_COLORS=ON -DSTATISTICS=0 ..
-make -j
-sudo ./fbcp-ili9341
+$ sudo apt-get install cmake
+$ git clone https://github.com/juj/fbcp-ili9341.git
+$ cd fbcp-ili9341
+$ mkdir build
+$ cd build
+$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON -DBACKLIGHT_CONTROL=ON -DDISPLAY_INVERT_COLORS=ON -DSTATISTICS=0 ..
+$ make -j
+$ sudo ./fbcp-ili9341
 
 Also add the following lines in /boot/config.txt:
 
-hdmi_group=2
-hdmi_mode=87
-hdmi_cvt=320 240 60 1 0 0 0
-hdmi_force_hotplug=1
+$ hdmi_group=2
+$ hdmi_mode=87
+$ hdmi_cvt=320 240 60 1 0 0 0
+$ hdmi_force_hotplug=1
 
+To start at boot, edit the /etc/rc.local in sudo mode, and add a line:
+
+$ sudo /home/pi/fbcp-ili9341/build/fbcp-ili9341 &
 
 The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
 I intend to test another display from waveshare
