@@ -42,7 +42,7 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
 The result surprised me in the responsiveness of the LCD obtained, when compared to using the same display with the Waveshare driver on kernel 4.19.
 For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
 
-### Raspberry Pi 3B+ and the Waveshare 3.5# B revision 2 LC:
+### Raspberry Pi 3B+ and the Waveshare 3.5" (B) revision 2 LCD:
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: $ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 
 <br>
@@ -59,7 +59,7 @@ The first image is the result of the first run of the driver, and tries to run t
 <img src="images/Pi3BPWave35Bv2-4.jpg" width="400" />  
 <br>
     
-### Raspberry Pi 4 (4GB) and the Waveshare 3.5" C LCD:
+### Raspberry Pi 4 (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted.
 
 <br>
