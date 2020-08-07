@@ -5,7 +5,7 @@ The reason seems to be that GPIO descriptors have been changed from pin numbers 
 
 I have tried to use an Waveshare 3.5" 480x320 ILI9486 display with the Waveshare driver, and also with two other drivers, without sucess with the new kernel. Note that all these drivers work without problems with the previous 4.19 kernel.
 
-I decided to try a completely new apprtoach, and use the FBCP SPI driver at [**Kpishere**](https://github.com/kpishere/fbcp-ili9341). This driver does not utilize the notro/fbtft framebuffer driver, i.e. dtoverlay=waveshare35xx should be removed from config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Likewise, if you have any touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. The driver has its own touch screen driver.
+I decided to try a new approach, and use the FBCP SPI driver at [**Kpishere**](https://github.com/kpishere/fbcp-ili9341). This driver does not use the notro/fbtft framebuffer driver, i.e. lines such as dtoverlay=waveshare35xx should be removed from /boot/config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Similarly, if there are touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. The driver has its own touch screen driver.
 
 **I used the following to make the driver:**
 
@@ -30,8 +30,9 @@ I decided to try a completely new apprtoach, and use the FBCP SPI driver at [**K
     $ sudo /home/pi/fbcp-ili9341/build/fbcp-ili9341 &
     
 The result surprised me in the responsiveness I obtained, compared when using the same display with the Waveshare driver with kernel 4.19
-I intend to test another display from waveshare.
+I intend to test another display from waveshare, and test it using a Raspberyy Pi 4. 
 
+The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON .. was used to build the driver, and shows inverted colours. The thisrd picture and the fifth picture is with the corrected colours.
 <br>
 <p align="center">
 <img src="images/Pi3BPWave35Bv2-1.jpg" width="300" />  
