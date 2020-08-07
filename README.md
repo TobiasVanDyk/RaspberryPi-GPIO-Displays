@@ -7,12 +7,10 @@ I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and 
 
 The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
-<br>
 <p align="center">
 <img src="images/Wave35b-v2.jpg" width="300" />  
 <img src="images/Wave35c.jpg" width="300" />  
 <br>
-
 I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**Kpishere**](https://github.com/kpishere/fbcp-ili9341). This driver does not use the [**notro/fbtft**](https://github.com/notro/fbtft) framebuffer driver, i.e. lines such as dtoverlay=waveshare35xx should be removed from /boot/config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Similarly, if there are touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. The driver has its own touch screen driver.
 
 **I used the following to make the driver:**
