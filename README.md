@@ -1,10 +1,11 @@
 # RaspberryPi-GPIO-Displays
 
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi.
-The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+ with a type Brev2 LCD, and a Raspberry Pi 4 (4GB) with a type C LCD, for the description below.
+The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+ with a type (B) rev2 3.5" LCD, and a Raspberry Pi 4 (4GB) with a type (C) 3.5" LCD, for the description below.
 
-I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), without success with the new Raspberry Pi 5.4 kernel. (Note that all these drivers work without problems with the previous 4.19 kernel.) The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
+I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), without success with the new Raspberry Pi 5.4 kernel. All these drivers work without problems with the previous 4.19 kernel. 
 
+The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
 <br>
 <p align="center">
