@@ -1,0 +1,23 @@
+pi@raspberrypi:~/fbcp-ili9341 $ sudo ./fbcp-ili9341
+sudo: ./fbcp-ili9341: command not found
+pi@raspberrypi:~/fbcp-ili9341 $ cd build
+pi@raspberrypi:~/fbcp-ili9341/build $ sudo ./fbcp-ili9341
+bcm_host_get_peripheral_address: 0x3f000000, bcm_host_get_peripheral_size: 16777216, bcm_host_get_sdram_address: 0xc0000000
+BCM core speed: current: 300000000hz, max turbo: 400000000hz. SPI CDIV: 30, SPI max frequency: 13333333hz
+Allocated DMA channel 7
+Allocated DMA channel 1
+Enabling DMA channels Tx:7 and Rx:1
+DMA hardware register file is at ptr: 0x75ab6000, using DMA TX channel: 7 and DMA RX channel: 1
+DMA hardware TX channel register file is at ptr: 0x75ab6700, DMA RX channel register file is at ptr: 0x75ab6100
+Resetting DMA channels for use
+DMA all set up
+Initializing display
+Resetting display at reset GPIO pin 25
+Creating SPI task thread
+InitSPI done
+DISPLAY_FLIP_ORIENTATION_IN_SOFTWARE: Swapping width/height to update display in portrait mode to minimize tearing.
+Relevant source display area size with overscan cropped away: 320x480.
+Source GPU display is 320x480. Output SPI display is 320x480 with a drawable area of 320x480. Applying scaling factor horiz=1.00x & vert=1.00x, xOffset: 0, yOffset: 0, scaledWidth: 320, scaledHeight: 480
+Creating dispmanX resource of size 320x480 (aspect ratio=0.666667).
+GPU grab rectangle is offset x=0,y=0, size w=320xh=480, aspect ratio=0.666667
+All initialized, now running main loop...
