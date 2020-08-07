@@ -3,7 +3,7 @@
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi.
 The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+, for the description below.
 
-I have previously, over many days, tried to use an Waveshare 3.5" 480x320 ILI9486 display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) driver, and also with two other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), without sucess with the new Raspberry Pi 5.4 kernel. (Note that all these drivers work without problems with the previous 4.19 kernel.) The LCD used is the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm) on the left below.
+I have previously, over many days, tried to use an Waveshare 3.5" 480x320 ILI9486 display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) driver, and also with two other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), without success with the new Raspberry Pi 5.4 kernel. (Note that all these drivers work without problems with the previous 4.19 kernel.) The LCD used is the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm) on the left below.
 
 <br>
 <p align="center">
