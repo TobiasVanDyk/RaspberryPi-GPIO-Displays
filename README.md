@@ -4,9 +4,9 @@ A recent kernel update to version 5.4, changed the GPIO configuration for a numb
 The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors
 rather than numerical gpios."* 
 
-I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a type (C) 3.5" LCD`, for the description below.
+I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
 
-I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), without success with the new Raspberry Pi 5.4 kernel. All these drivers work without problems with the previous 4.19 kernel. 
+I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four dis not work (i.e. blank display - white or black), without success with the new Raspberry Pi 5.4 kernel. All these drivers work without problems with the previous 4.19 kernel. 
 
 The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
@@ -71,6 +71,6 @@ The first image is the result of the first run of the driver (1920x1080 resoluti
 <img src="images/Pi4Wave35C-2.jpg.jpg" width="400" />  
 <br>
     
-Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production.
+Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production. *There are indications that the framebuffer driver problem may be as simple as changing the polarity of the gpio reset pin from 0 to 1.*
 
 
