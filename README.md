@@ -1,8 +1,8 @@
 # RaspberryPi-GPIO-Displays
 
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi.
-The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *This switches the fbtft driver to use GPIO descriptors
-rather than numerical gpios.* 
+The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors
+rather than numerical gpios."* 
 
 I used a nightly kernel 2020-08-06-raspios-buster-nightly-armhf with a Raspberry Pi 3B+ with a type (B) rev2 3.5" LCD, and a Raspberry Pi 4 (4GB) with a type (C) 3.5" LCD, for the description below.
 
