@@ -94,7 +94,7 @@ The usability effort = drag coeffiecient of moving the mosue curser to a specifi
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: `$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON ..` was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/Pi3BPWave35Bv2-1.jpg" width="300" />  
 <img src="images/Pi3BPWave35Bv2-3.jpg" width="300" />  
 <img src="images/Pi3BPWave35Bv2-5.jpg" width="300" />  
@@ -102,7 +102,7 @@ The first image is the result of the first run of the driver, and tries to run t
     
     
 <br>
-<p align="center">
+<p align="left">
 <img src="images/Pi3BPWave35Bv2-2.jpg" width="400" />  
 <img src="images/Pi3BPWave35Bv2-4.jpg" width="400" />  
 <br>
@@ -111,7 +111,7 @@ The first image is the result of the first run of the driver, and tries to run t
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted, and the cmake option -DDISPLAY_INVERT_COLORS=ON will be removed.
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/Pi4Wave35C-1.jpg.jpg" width="400" />  
 <img src="images/Pi4Wave35C-2.jpg.jpg" width="400" />  
 <br>
@@ -121,7 +121,7 @@ Problems with these SPI LCD displays have been mentioned on the main [**Raspberr
 No - changing tft35a@0:reset-gpios:0 to tft35a@0:reset-gpios:1 with a hex editor in the dtb driver had no effect.
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/reset-gpios.png" width="800" />  
 <br
     
