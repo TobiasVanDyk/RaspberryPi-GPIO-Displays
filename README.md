@@ -85,9 +85,8 @@ The result surprised me in the responsiveness of the LCD obtained (*subjectively
 For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
 
 [**VladStudio The Two and the Mouse:**](https://vlad.studio/wallpaper/thetwoandthemouse)
-
 <br>
-<p align="center">
+<p align="left">
 <img src="images/thetwoandthemouse.jpg" width="600" />  
 <br>
 
