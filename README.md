@@ -1,7 +1,7 @@
 # RaspberryPi-GPIO-Displays
 
 ### Kernel 4.19
-Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four functioned well when using the Raspberry Pi Linux 4.19 kernel. 
+Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four driver sets functioned well when using the Raspberry Pi Linux 4.19 kernel. 
 
 The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
@@ -12,6 +12,15 @@ The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](h
 <br>
     
 For comparison with the results when using the SPI DMA accelerated driver with the new kernel 5.4, as detailed in the next section, the set of eight photos are shown below.
+
+In order to obtain dual HDMI LCD displays I added the following lines in /boot/config.txt:
+
+    $ hdmi_group=2
+    $ hdmi_mode=87
+    $ hdmi_cvt=480 320 60 1 0 0 0
+    $ hdmi_force_hotplug=1
+
+**Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:
 
 <br>
 <p align="center">
@@ -24,6 +33,8 @@ For comparison with the results when using the SPI DMA accelerated driver with t
 <img src="images/RPi3BPK419LCDBv2-1.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDBv2-2.jpg" width="400" />  
 <br>
+
+**Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:    
     
 <br>
 <p align="center">
@@ -36,10 +47,11 @@ For comparison with the results when using the SPI DMA accelerated driver with t
 <img src="images/RPi3BPK419LCDC-1.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDC-2.jpg" width="400" />  
 <br>
+
+The Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because of the latter's fiddley micro-hdmi connector - I did nit want to break it with frequent change-overs.
     
-A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt).
-The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors
-rather than numerical gpios."* 
+### Kernel 5.4  
+A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
 
 I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
 
