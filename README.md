@@ -84,7 +84,7 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
 The result surprised me in the responsiveness of the LCD obtained - *subjectively measured using the user experience when moving the cursor around* - see [**VladStudio The Two and the Mouse**](https://vlad.studio/wallpaper/thetwoandthemouse) - when compared to using the same display with the Waveshare driver on kernel 4.19. For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
 
 [**VladStudio The Two and the Mouse:**](https://vlad.studio/wallpaper/thetwoandthemouse)
-The usability effort = drag coeffiecient of moving the mosue curser to a specified point in order to complete a user task. (*In fluid dynamics, the drag coefficient is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment.)*
+The usability effort = drag coeffiecient of moving the mouse curser to a specified point in order to complete a user task. (*In fluid dynamics, the drag coefficient is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment.)*
 <br>
 <p align="left">
 <img src="images/thetwoandthemouse.jpg" width="600" />  
