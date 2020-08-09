@@ -1,7 +1,7 @@
 # RaspberryPi-GPIO-Displays
 
 ### Kernel 4.19
-Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four driver sets functioned well when using the Raspberry Pi Linux 4.19 kernel. 
+Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four driver sets functioned well when using the Raspberry Pi Linux 4.19 kernel. (None of these four driversets worked with the Linux kernel 5.4.)
 
 The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
