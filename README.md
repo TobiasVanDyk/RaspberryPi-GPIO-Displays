@@ -69,17 +69,18 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
     $ cd fbcp-ili9341
     $ sudo ./fbcp-ili9341
     
-**Also add the following lines in /boot/config.txt:**
-
-    $ hdmi_group=2
-    $ hdmi_mode=87
-    $ hdmi_cvt=480 320 60 1 0 0 0
-    $ hdmi_force_hotplug=1
-
-**To start at boot, edit the /etc/rc.local in sudo mode, and add a line:**
-
-    $ sudo /home/pi/fbcp-ili9341/build/fbcp-ili9341 &
-    
+Also add the following lines in /boot/config.txt:
+```
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt=480 320 60 1 0 0 0
+hdmi_force_hotplug=1
+```
+To start at boot, edit the /etc/rc.local in sudo mode, and add a line:
+```
+sudo /home/pi/fbcp-ili9341/build/fbcp-ili9341 &
+```
+  
 [**sudo-fbcp-ili9341-result.txt**](sudo-fbcp-ili9341-result.txt) shows the result of running the driver.
 
 The result surprised me in the responsiveness of the LCD obtained - *subjectively measured using the user experience when moving the cursor around* - see [**VladStudio The Two and the Mouse**](https://vlad.studio/wallpaper/thetwoandthemouse) - when compared to using the same display with the Waveshare driver on kernel 4.19. For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
