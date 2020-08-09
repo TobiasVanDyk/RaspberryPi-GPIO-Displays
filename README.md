@@ -1,9 +1,9 @@
 # RaspberryPi-GPIO-Displays
 
 ### Kernel 4.19
-Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD and MHS35B-show for the Waveshare (B) revison 2 LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four driver sets functioned well when using the Raspberry Pi Linux 4.19 kernel. (None of these four driversets worked with the Linux kernel 5.4.)
+Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD and MHS35B-show for the Waveshare (B) revison 2 LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
 
-The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
+The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
 <br>
 <p align="left">
@@ -11,9 +11,9 @@ The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](h
 <img src="images/Wave35c.jpg" width="300" />  
 <br>
     
-For comparison with the results when using the SPI DMA accelerated driver with the new kernel 5.4, as detailed in the next section, the set of eight photos are shown below.
+The set of eight photos below, show the result of using the Waveshare drivers with the 4,19 kernel. This can be compared to the results when using the SPI DMA accelerated driver with the new kernel 5.4, as detailed in the next section.
 
-In order to obtain dual HDMI LCD displays I added the following lines in /boot/config.txt:
+In order to obtain dual HDMI LCD displays add the following lines in /boot/config.txt:
 
     $ hdmi_group=2
     $ hdmi_mode=87
