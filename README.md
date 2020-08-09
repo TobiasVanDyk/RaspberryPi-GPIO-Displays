@@ -112,7 +112,7 @@ The first image is the result of the first run of the driver (1920x1080 resoluti
     
 Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production. *There are indications that the framebuffer driver problem may be as simple as changing the polarity of the gpio reset pin from 0 to 1.*
 
-No - changing tft35a@0:reset-gpios:0 to tft35a@0:reset-gpios:1 with a hex editor in the dts driver had no effect.
+No - changing tft35a@0:reset-gpios:0 to tft35a@0:reset-gpios:1 with a hex editor in the dtb driver had no effect.
 
 <br>
 <p align="center">
