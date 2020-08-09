@@ -6,7 +6,7 @@ Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested 
 The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/Wave35b-v2.jpg" width="300" />  
 <img src="images/Wave35c.jpg" width="300" />  
 <br>
@@ -23,13 +23,13 @@ In order to obtain dual HDMI LCD displays I added the following lines in /boot/c
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:**
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/RPi3BPK419LCDBv2-3.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDBv2-4.jpg" width="400" />  
 <br>
     
 <br>
-<p align="center">
+<p align="left">
 <img src="images/RPi3BPK419LCDBv2-1.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDBv2-2.jpg" width="400" />  
 <br>
@@ -37,13 +37,13 @@ In order to obtain dual HDMI LCD displays I added the following lines in /boot/c
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
     
 <br>
-<p align="center">
+<p align="left">
 <img src="images/RPi3BPK419LCDC-3.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDC-4.jpg" width="400" />  
 <br>
 
 <br>
-<p align="center">
+<p align="left">
 <img src="images/RPi3BPK419LCDC-1.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDC-2.jpg" width="400" />  
 <br>
@@ -81,10 +81,10 @@ I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**
     
 [**sudo-fbcp-ili9341-result.txt**](sudo-fbcp-ili9341-result.txt) shows the result of running the driver.
 
-The result surprised me in the responsiveness of the LCD obtained (*subjectively measured using the user experience when moving the cursor around* - see [**VladStudio The Two and the Mouse**](https://vlad.studio/wallpaper/thetwoandthemouse), when compared to using the same display with the Waveshare driver on kernel 4.19.
-For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
+The result surprised me in the responsiveness of the LCD obtained - *subjectively measured using the user experience when moving the cursor around* - see [**VladStudio The Two and the Mouse**](https://vlad.studio/wallpaper/thetwoandthemouse) - when compared to using the same display with the Waveshare driver on kernel 4.19. For the type C display from Waveshare with a Raspberry Pi 4, the colours are inverted, and only the LCD has a display.
 
 [**VladStudio The Two and the Mouse:**](https://vlad.studio/wallpaper/thetwoandthemouse)
+The usability effort = drag coeffiecient of moving the mosue curser to a specified point in order to complete a user task. (*In fluid dynamics, the drag coefficient is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment.)*
 <br>
 <p align="left">
 <img src="images/thetwoandthemouse.jpg" width="600" />  
