@@ -15,10 +15,12 @@ The set of eight photos below, show the results of using the Waveshare drivers w
 
 In order to obtain dual HDMI LCD displays add the following lines in /boot/config.txt:
 
-    $ hdmi_group=2
-    $ hdmi_mode=87
-    $ hdmi_cvt=480 320 60 1 0 0 0
-    $ hdmi_force_hotplug=1
+'''
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt=480 320 60 1 0 0 0
+hdmi_force_hotplug=1
+'''
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:**
 
