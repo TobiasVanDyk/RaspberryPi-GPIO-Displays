@@ -1,12 +1,7 @@
 # RaspberryPi-GPIO-Displays
 
-A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt).
-The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors
-rather than numerical gpios."* 
-
-I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
-
-I have previously tried to use Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four dis not work (i.e. blank display - white or black), when using the Raspberry Pi Linux 5.4 kernel. All these drivers work without problems with the previous Linux 4.19 kernel. 
+### Kernel 4.19
+Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays with the [**Waveshare LCD**](https://github.com/waveshare/LCD-show) drivers, and also with three other sets of drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four functioned well when using the Raspberry Pi Linux 4.19 kernel. 
 
 The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
@@ -16,6 +11,38 @@ The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](h
 <img src="images/Wave35c.jpg" width="300" />  
 <br>
     
+For comparison with the results when using the SPI DMA accelerated driver with the new kernel 5.4, as detailed in the next section, the set of eight photos are shown below.
+
+<br>
+<p align="center">
+<img src="images/RPi3BPK419LCDBv2-3.jpg" width="400" />  
+<img src="images/RPi3BPK419LCDBv2-4.jpg" width="400" />  
+<br>
+    
+<br>
+<p align="center">
+<img src="images/RPi3BPK419LCDBv2-1.jpg" width="400" />  
+<img src="images/RPi3BPK419LCDBv2-2.jpg" width="400" />  
+<br>
+    
+<br>
+<p align="center">
+<img src="images/RPi3BPK419LCDC-3.jpg" width="400" />  
+<img src="images/RPi3BPK419LCDC-4.jpg" width="400" />  
+<br>
+
+<br>
+<p align="center">
+<img src="images/RPi3BPK419LCDC-1.jpg" width="400" />  
+<img src="images/RPi3BPK419LCDC-2.jpg" width="400" />  
+<br>
+    
+A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt).
+The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors
+rather than numerical gpios."* 
+
+I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
+
 I decided to try a new approach, and use the [**FBCP SPI driver**](/fbcp) at [**juj**](https://github.com/juj/fbcp-ili9341). This driver does not use the [**notro/fbtft**](https://github.com/notro/fbtft) framebuffer driver, i.e. lines such as dtoverlay=waveshare35xx should be removed from /boot/config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Similarly, if there are touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. The driver has its own touch screen driver.
 
 **I used the following to make the driver:**
