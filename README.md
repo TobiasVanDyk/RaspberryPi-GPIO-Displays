@@ -20,7 +20,7 @@ In order to obtain dual HDMI LCD displays I added the following lines in /boot/c
     $ hdmi_cvt=480 320 60 1 0 0 0
     $ hdmi_force_hotplug=1
 
-**Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:
+**Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:**
 
 <br>
 <p align="center">
@@ -34,7 +34,7 @@ In order to obtain dual HDMI LCD displays I added the following lines in /boot/c
 <img src="images/RPi3BPK419LCDBv2-2.jpg" width="400" />  
 <br>
 
-**Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:    
+**Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
     
 <br>
 <p align="center">
