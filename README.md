@@ -8,7 +8,7 @@ I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspbe
 
 I have previously tried to use a Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C display with the [**Waveshare LCD B v2**](https://github.com/waveshare/LCD-show) drivers, and also with three other drivers [**GoodTFFT**](https://github.com/goodtft/LCD-show) and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay), all four dis not work (i.e. blank display - white or black), without success with the new Raspberry Pi 5.4 kernel. All these drivers work without problems with the previous 4.19 kernel. 
 
-The LCD used for the tests are the [**Waveshare display B v2**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
+The LCD used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the second LCD is the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
 <br>
 <p align="center">
