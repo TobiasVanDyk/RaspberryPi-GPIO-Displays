@@ -4,8 +4,8 @@
 
 **Kernel 5.4 is now working with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI):**      
 <p align="left">
-<img src="images/Pi3BK54LCDc-1.jpg" width="400" />  
-<img src="images/Pi3BK54LCDc-2.jpg" width="400" />  
+<img src="images/Pi3BK54LCDc-1.jpg" height="600" />  
+<img src="images/Pi3BK54LCDc-2.jpg" height="600" />  
 <br>
 
 
@@ -68,7 +68,7 @@ hdmi_cvt 480 320 60 6 0 0 0
 hdmi_drive=2
 display_rotate=0
 ```
-More more information see the following links:
+For more information about this kernel 5.4 fix, see the following links:
 * [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
