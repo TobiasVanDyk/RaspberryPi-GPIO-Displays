@@ -1,6 +1,6 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4.
+**Update 11 Aug 2020:** `There are new driver files for the Waveshare Type C (Fast SPI)` now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
 
 **Kernel 5.4 working with Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
     
@@ -64,8 +64,7 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4.
-Follow the old instructions to install the Waveshare tyope C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 in here, contains my config.txt and the working dtbo files (as well as the source file dts).
+**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4. Follow the old instructions to install the Waveshare tyope C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 in here, contains my config.txt and the working dtbo files (as well as the source file dts).
 
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
 
