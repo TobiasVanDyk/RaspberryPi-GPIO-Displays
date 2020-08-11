@@ -2,6 +2,15 @@
 
 **Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the swkim01 github page which functions well with kernel 5.4.
 
+**Kernel 5.4 working with Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
+    
+<br>
+<p align="left">
+<img src="images/Pi3BK54LCDc-1.jpg" width="400" />  
+<img src="images/Pi3BK54LCDc-2.jpg" width="400" />  
+<br>
+
+
 ### Kernel 4.19
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
 
