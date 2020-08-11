@@ -1,5 +1,7 @@
 # RaspberryPi-GPIO-Displays
 
+**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the swkim01 github page which functions well with kernel 5.4.
+
 ### Kernel 4.19
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
 
@@ -52,6 +54,10 @@ hdmi_force_hotplug=1
 The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs.
     
 ### Kernel 5.4  
+
+**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the swkim01 github page which functions well with kernel 5.4.
+Follow the old instructions to install the Waveshare tyope C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 here contains my config.txt and the working dtbo files (as well as the source file dts).
+
 A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
 
 I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
@@ -121,6 +127,7 @@ The first image is the result of the first run of the driver (1920x1080 resoluti
 Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production. *There are indications that the framebuffer driver problem may be as simple as changing the polarity of the gpio reset pin from 0 to 1.*
 
 No - changing tft35a@0:reset-gpios:0 to tft35a@0:reset-gpios:1 with a hex editor in the dtb driver had no effect.
+Yes - a recent change (see swkim01 in github) has changed reset-gpios = <&gpio 25 1>; and the driver now functions with kernel 5.4
 
 <br>
 <p align="left">
