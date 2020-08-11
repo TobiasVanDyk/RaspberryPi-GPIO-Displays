@@ -56,7 +56,7 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4. Follow the old instructions to install the Waveshare tyope C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 in here, contains my config.txt and the working dtbo files (as well as the source file dts).
+**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4. Follow the old instructions to install the Waveshare type C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 in here, contains my config.txt and the working dtbo files (as well as the source file dts).
 Add the following lines in /boot/config.txt:
 ```
 dtoverlay=waveshare35c:rotate=90
