@@ -29,8 +29,6 @@ hdmi_force_hotplug=1
 ```
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:**
-
-<br>
 <p align="left">
 <img src="images/RPi3BPK419LCDBv2-3.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDBv2-4.jpg" width="400" />  
@@ -43,8 +41,6 @@ hdmi_force_hotplug=1
 <br>
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
-    
-<br>
 <p align="left">
 <img src="images/RPi3BPK419LCDC-3.jpg" width="400" />  
 <img src="images/RPi3BPK419LCDC-4.jpg" width="400" />  
@@ -116,15 +112,12 @@ The widely used user-experience **CUE factor** i.e. the cursor usability effort 
 
 ### Raspberry Pi 3B+ and the Waveshare 3.5" (B) revision 2 LCD:
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: `$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON ..` was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
-
-<br>
 <p align="left">
 <img src="images/Pi3BPWave35Bv2-1.jpg" width="300" />  
 <img src="images/Pi3BPWave35Bv2-3.jpg" width="300" />  
 <img src="images/Pi3BPWave35Bv2-5.jpg" width="300" />  
 <br>
-    
-    
+   
 <br>
 <p align="left">
 <img src="images/Pi3BPWave35Bv2-2.jpg" width="400" />  
@@ -134,7 +127,6 @@ The first image is the result of the first run of the driver, and tries to run t
 ### Raspberry Pi 4 (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted, and the cmake option -DDISPLAY_INVERT_COLORS=ON will be removed.
 
-<br>
 <p align="left">
 <img src="images/Pi4Wave35C-1.jpg.jpg" width="400" />  
 <img src="images/Pi4Wave35C-2.jpg.jpg" width="400" />  
