@@ -50,7 +50,9 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4. Follow the old instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or from here. The folders swkim01 and waveshare35bv2, contain my config.txt and the working dtbo files (as well as the source file dts).
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4. Follow the old Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2, from here. The folders swkim01 and waveshare35bv2, contain my config.txt and the working dtbo files (as well as the source file dts).
+
+*To compile new drivers edit the dts files for the type C and B revision 2 LCD displays from the Waveshare Github page, and substitute 1 for 0 for both the reset and penup GPIO's. Then get a newer version of dtc:  git clone git://git.kernel.org/pub/scm/utils/dtc/dtc.git, make, and then copy the new dts files into the dtc folder as well as the dtc.sh script from swkim01. Then do: sudo dtc -@ -I dts -O dtb -o waveshare35c.dtbo waveshare35c.dts. Ignore the spi warning. The dtbo files can now be copied to the boot/overlays/ folder.*
 
 Add the following lines in /boot/config.txt:
 ```
