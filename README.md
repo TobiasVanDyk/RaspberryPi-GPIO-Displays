@@ -1,8 +1,8 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new dtoverlay driver files for the Waveshare Type C (Fast SPI) LCD` now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
+**Update 11 Aug 2020:** `There are new dtoverlay driver files for the both the Waveshare Type C (Fast SPI) LCD, and the Waveshare Type B revision 2`, now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
 
-**Kernel 5.4 is now working with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI):**      
+**Kernel 5.4 is now working with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and both Waveshare 3.5" LCD (C) 125 MHz SPI and (B)rev2):**      
 <p align="left">
 <img src="images/Pi3BK54LCDc-1.jpg" height="500" />  
 <img src="images/Pi3BK54LCDc-2.jpg" height="500" />  
