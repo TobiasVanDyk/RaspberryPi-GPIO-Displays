@@ -1,6 +1,6 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new dtoverlay driver files for the Waveshare Type C (Fast SPI)` now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
+**Update 11 Aug 2020:** `There are new dtoverlay driver files for the Waveshare Type C (Fast SPI) LCD` now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
 
 **Kernel 5.4 is now working with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI):**      
 <p align="left">
@@ -68,6 +68,10 @@ hdmi_cvt 480 320 60 6 0 0 0
 hdmi_drive=2
 display_rotate=0
 ```
+More more information see the following links:
+* [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
+* [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
+* [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 
 
 **Previously:** A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
