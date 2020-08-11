@@ -2,12 +2,6 @@
 
 **Update 11 Aug 2020:** `There are new dtoverlay driver files for the both the Waveshare Type C (Fast SPI) LCD, and the Waveshare Type B revision 2`, now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which `functions well with kernel 5.4`.
 
-**Kernel 5.4 is now working with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and both Waveshare 3.5" LCD (C) 125 MHz SPI and (B)rev2):**      
-<p align="left">
-<img src="images/Pi3BK54LCDc-1.jpg" height="500" />  
-<img src="images/Pi3BK54LCDc-2.jpg" height="500" />  
-<br>
-
 
 ### Kernel 4.19
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
@@ -56,7 +50,8 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for the Waveshare Type C (Fast SPI) now on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), which functions well with kernel 5.4. Follow the old instructions to install the Waveshare type C LCD, then reboot and replace the waveshare35c.dtbo in /boot/overlays/ with the one from swkim01 in github. The folder swkim01 in here, contains my config.txt and the working dtbo files (as well as the source file dts).
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4. Follow the old instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or from here. The folders swkim01 and waveshare35bv2, contain my config.txt and the working dtbo files (as well as the source file dts).
+
 Add the following lines in /boot/config.txt:
 ```
 dtoverlay=waveshare35c:rotate=90
@@ -73,7 +68,18 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 
-
+**Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**      
+<p align="left">
+<img src="images/Pi3BK54LCDc-1.jpg" width="400" />  
+<img src="images/Pi3BK54LCDc-2.jpg" width="400" />  
+<br>
+    
+**Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and both Waveshare 3.5" LCD (B) revision 2):**      
+<p align="left">
+<img src="images/Pi3BK54LCDbv2-1.jpg" width="400" />  
+<img src="images/Pi3BK54LCDbv2-2.jpg" width="400" />  
+<br>
+    
 **Previously:** A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
 
 I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
