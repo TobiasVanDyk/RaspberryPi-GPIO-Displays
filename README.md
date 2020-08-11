@@ -54,7 +54,7 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
 
 *To compile new drivers edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and substitute 1 for 0 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). Then get a newer version of dtc:  git clone git://git.kernel.org/pub/scm/utils/dtc/dtc.git, make, and then copy the new dts files into the dtc folder as well as the dtc.sh script from swkim01. Then do: sudo dtc -@ -I dts -O dtb -o waveshare35c.dtbo waveshare35c.dts. Ignore the spidev warning. The dtbo files can now be copied to the /boot/overlays/ folder.*
 
-Add the following lines in /boot/config.txt if they are not already there:
+Add the following lines in /boot/config.txt if they are not already there (change the waveshare35c to waveshare35b-v2 if required):
 ```
 dtoverlay=waveshare35c:rotate=90
 hdmi_force_hotplug=1
