@@ -45,6 +45,8 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because
 
 **Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4. Follow the old Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2, from here. The folders swkim01 and waveshare35bv2, contain my config.txt and the working dtbo files (as well as the source file dts).
 
+If the Waveshare instructions do not work, use the instructions in the [**goodTFT folder here**](/goodTFT/Instructions%20for%20Waveshare%2035inch%20Fast%20SPI%20LCD%20Type%20C.txt), for the Waveshare 3.5" Type C LCD. 
+
 **Compiling new SPI LCD drivers for kernel 5.4:** 
 * Edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and substitute 1 for 0 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). 
 * Then get a newer version of dtc:  git clone git://git.kernel.org/pub/scm/utils/dtc/dtc.git, and then do make.
