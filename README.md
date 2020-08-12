@@ -24,27 +24,20 @@ hdmi_force_hotplug=1
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD IPS (B) 15 MHz SPI:**
 <p align="left">
-<img src="images/RPi3BPK419LCDBv2-3.jpg" height="500" />  
-<img src="images/RPi3BPK419LCDBv2-4.jpg" height="500" />  
-<br>
-    
-<br>
-<p align="left">
-<img src="images/RPi3BPK419LCDBv2-1.jpg" width="400" />  
-<img src="images/RPi3BPK419LCDBv2-2.jpg" width="400" />  
+<img src="images/RPi3BPK419LCDBv2-3.jpg" width="200" />  
+<img src="images/RPi3BPK419LCDBv2-4.jpg" width="200" /> 
+<img src="images/RPi3BPK419LCDBv2-1.jpg" width="200" />  
+<img src="images/RPi3BPK419LCDBv2-2.jpg" width="200" />    
 <br>
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
 <p align="left">
-<img src="images/RPi3BPK419LCDC-3.jpg" height="500" />  
-<img src="images/RPi3BPK419LCDC-4.jpg" height="500" />  
+<img src="images/RPi3BPK419LCDC-3.jpg" height="300" />  
+<img src="images/RPi3BPK419LCDC-4.jpg" height="300" /> 
+<img src="images/RPi3BPK419LCDC-1.jpg" width="200" />  
+<img src="images/RPi3BPK419LCDC-2.jpg" width="200" />     
 <br>
 
-<br>
-<p align="left">
-<img src="images/RPi3BPK419LCDC-1.jpg" width="400" />  
-<img src="images/RPi3BPK419LCDC-2.jpg" width="400" />  
-<br>
 
 The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs.
     
