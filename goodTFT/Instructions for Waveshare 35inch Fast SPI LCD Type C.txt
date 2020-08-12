@@ -1,0 +1,9 @@
+Instructions for Waveshare 3.5" Fast SPI LCD Type C:
+
+1. git clone https://github.com/goodtft/LCD-show.git
+2. Copy LCD35C-show into LCD-show folder
+3. Copy waveshare35c-overlay.dtb into LCD-show/usr folder
+4. chmod -R 755 LCD-show
+5. cd LCD-show
+6. sudo ./LCD35C-show
+7. Reboot
