@@ -32,8 +32,8 @@ hdmi_force_hotplug=1
 
 **Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**    
 <p align="left">
-<img src="images/RPi3BPK419LCDC-3.jpg" height="300" />  
-<img src="images/RPi3BPK419LCDC-4.jpg" height="300" /> 
+<img src="images/RPi3BPK419LCDC-3.jpg" width="200" />  
+<img src="images/RPi3BPK419LCDC-4.jpg" width="200" /> 
 <img src="images/RPi3BPK419LCDC-1.jpg" width="200" />  
 <img src="images/RPi3BPK419LCDC-2.jpg" width="200" />     
 <br>
@@ -71,14 +71,14 @@ For more information about this kernel 5.4 fix, see the following links:
 
 **Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**      
 <p align="left">
-<img src="images/Pi3BK54LCDc-1.jpg" width="400" />  
-<img src="images/Pi3BK54LCDc-2.jpg" width="400" />  
+<img src="images/Pi3BK54LCDc-1.jpg" width="300" />  
+<img src="images/Pi3BK54LCDc-2.jpg" width="300" />  
 <br>
     
 **Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and both Waveshare 3.5" LCD (B) revision 2):**      
 <p align="left">
-<img src="images/Pi3BK54LCDbv2-1.jpg" width="400" />  
-<img src="images/Pi3BK54LCDbv2-2.jpg" width="400" />  
+<img src="images/Pi3BK54LCDbv2-1.jpg" width="300" />  
+<img src="images/Pi3BK54LCDbv2-2.jpg" width="300" />  
 <br>
     
 **Previously:** A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
@@ -124,23 +124,23 @@ The widely used user-experience **CUE factor** i.e. the cursor usability effort 
 ### Raspberry Pi 3B+ and the Waveshare 3.5" (B) revision 2 LCD:
 The first image is the result of the first run of the driver, and tries to run the LCD display at 1920x1080 pixels. The second, and fourth picture, is after the cmake line: `$ cmake -DSPI_BUS_CLOCK_DIVISOR=30 -DWAVESHARE35B_ILI9486=ON ..` was used to build the driver, and shows inverted colours. The third and the fifth picture is with the corrected colour driver.
 <p align="left">
-<img src="images/Pi3BPWave35Bv2-1.jpg" width="300" />  
-<img src="images/Pi3BPWave35Bv2-3.jpg" width="300" />  
-<img src="images/Pi3BPWave35Bv2-5.jpg" width="300" />  
+<img src="images/Pi3BPWave35Bv2-1.jpg" width="200" />  
+<img src="images/Pi3BPWave35Bv2-3.jpg" width="200" />  
+<img src="images/Pi3BPWave35Bv2-5.jpg" width="200" />  
 <br>
    
 <br>
 <p align="left">
-<img src="images/Pi3BPWave35Bv2-2.jpg" width="400" />  
-<img src="images/Pi3BPWave35Bv2-4.jpg" width="400" />  
+<img src="images/Pi3BPWave35Bv2-2.jpg" width="300" />  
+<img src="images/Pi3BPWave35Bv2-4.jpg" width="300" />  
 <br>
     
 ### Raspberry Pi 4 (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted, and the cmake option -DDISPLAY_INVERT_COLORS=ON will be removed.
 
 <p align="left">
-<img src="images/Pi4Wave35C-1.jpg.jpg" width="400" />  
-<img src="images/Pi4Wave35C-2.jpg.jpg" width="400" />  
+<img src="images/Pi4Wave35C-1.jpg.jpg" width="300" />  
+<img src="images/Pi4Wave35C-2.jpg.jpg" width="300" />  
 <br>
     
 Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production. *There are indications that the framebuffer driver problem may be as simple as changing the polarity of the gpio reset pin from 0 to 1.*
