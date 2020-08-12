@@ -38,14 +38,11 @@ hdmi_force_hotplug=1
 <img src="images/RPi3BPK419LCDC-2.jpg" width="200" />     
 <br>
 
-
-The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs.
+The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4B, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs. The Raspberry Pi 4B does work with both displays using kernel 4.19.
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4. Follow the old Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2, from here. The folders swkim01 and waveshare35bv2, contain my config.txt and the working dtbo files (as well as the source file dts).
-
-If the Waveshare instructions do not work, use the instructions in the [**goodTFT folder here**](/goodTFT/Instructions%20for%20Waveshare%2035inch%20Fast%20SPI%20LCD%20Type%20C.txt), for the Waveshare 3.5" Type C LCD. 
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+). Follow either the Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD or use the instructions here in the goodTFT folder, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2 LCD, from here. The folders swkim01 and waveshare35bv2, contain working config.txt and the dtbo files (as well as the dts source files).
 
 **Compiling new SPI LCD drivers for kernel 5.4:** 
 * Edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and substitute 1 for 0 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). 
@@ -137,7 +134,7 @@ The first image is the result of the first run of the driver, and tries to run t
 <img src="images/Pi3BPWave35Bv2-4.jpg" width="300" />  
 <br>
     
-### Raspberry Pi 4 (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
+### Raspberry Pi 4B (4GB) and the Waveshare 3.5" (C) fast SPI LCD:
 The first image is the result of the first run of the driver (1920x1080 resolution), and the second after a reboot. The colours are inverted, and the cmake option -DDISPLAY_INVERT_COLORS=ON will be removed.
 
 <p align="left">
