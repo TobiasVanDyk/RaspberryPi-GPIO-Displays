@@ -1,6 +1,6 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new device tree dtoverlay FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and for the second it is is the folder waveshare35bv2 here. Both `function well with the new kernel 5.4 - but only up to the Raspberry3B+ model`. **Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.**
+**Update 11 Aug 2020:** `There are new device tree dtoverlay FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and for the second it is is the folder waveshare35bv2 here. Both `function well with the new kernel 5.4 - but only up to the RaspberryPi 3B+ model`. **Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.**
 
 
 ### Kernel 4.19
