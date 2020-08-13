@@ -78,7 +78,7 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 
-**Kernel 5.4 + new standard dtoverlay fbcp drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD type (C) and type (B) revision 2):**      
+**Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD type (C) and type (B) revision 2):**      
 <p align="left">
 <img src="images/Pi3BK54LCDc-1.jpg" width="200" />  
 <img src="images/Pi3BK54LCDc-2.jpg" width="200" />     
