@@ -42,7 +42,13 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4B, becaus
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+). Follow either the Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD or use the instructions here in the goodTFT folder, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2 LCD, from here. The folders swkim01 and waveshare35bv2, contain working config.txt and the dtbo files (as well as the dts source files).
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+). 
+
+As an alternative use one of the following two methods for working kernel 5.5 and Raspberry Pi3B+ dtoverlay drivers:
+
+(1) Follow the Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2 LCD, from here in the folder waveshare35bv2 . 
+
+(2) Follow the instructions here in the goodTFT folder to install the Waveshare type C or B rev 2 LCD, and then reboot.
 
 **Compiling new SPI LCD drivers for kernel 5.4:** 
 * Edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and substitute 1 for 0 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). 
@@ -62,6 +68,8 @@ hdmi_cvt 480 320 60 6 0 0 0
 hdmi_drive=2
 display_rotate=0
 ```
+The folders swkim01 and waveshare35bv2, contain working config.txt and the dtbo files (as well as the dts source files).
+
 For more information about this kernel 5.4 fix, see the following links:
 * [**Waveshare 2.8" lcd and latest Pi OS**](https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=281023)
 * [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
