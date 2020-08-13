@@ -123,7 +123,7 @@ The result surprised me in the responsiveness of the LCD obtained - *subjectivel
 The widely used user-experience **CUE factor** i.e. the cursor usability effort = drag coefficient of moving the mouse cursor to a specified point in order to complete a user task. (*In fluid dynamics, the drag coefficient is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment.)*
 <br>
 <p align="left">
-<img src="images/thetwoandthemouse.jpg" width="600" />  
+<img src="images/thetwoandthemouse.jpg" width="400" />  
 <br>
 
 ### Raspberry Pi 3B+ and the Waveshare 3.5" (B) revision 2 LCD:
