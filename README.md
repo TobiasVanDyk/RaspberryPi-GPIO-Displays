@@ -64,10 +64,12 @@ hdmi_force_hotplug=1
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
-hdmi_cvt 480 320 60 6 0 0 0
+hdmi_cvt=480 320 60 6 0 0 0
 hdmi_drive=2
 display_rotate=0
 ```
+Make sure the line hdmi_cvt=480 320 60 6 0 0 0 has the equal sign, because the waveshare script is incorrect.
+
 The folders swkim01 and waveshare35bv2, contain working config.txt and the dtbo files (as well as the dts source files).
 
 For more information about this kernel 5.4 fix, see the following links:
