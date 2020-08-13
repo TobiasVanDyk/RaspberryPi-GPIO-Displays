@@ -1,6 +1,6 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new device tree dtoverlay FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and for the second it is is the folder waveshare35bv2 here. Both `function well with the new kernel 5.4 - but only up to the RaspberryPi 3B+ model`. **Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.**
+**Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and for the second it is is the folder waveshare35bv2 here. Both `function well with the new kernel 5.4 - but succesfullly tested here, only up to the RaspberryPi 3B+ model`. **Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.**
 
 
 ### Kernel 4.19
@@ -94,7 +94,7 @@ For more information about this kernel 5.4 fix, see the following links:
 
 I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
 
-A new approach is to use the [**Custom SPI LCD driver**](/fbcp) at [**juj**](https://github.com/juj/fbcp-ili9341). This driver does not use the [**notro/fbtft**](https://github.com/notro/fbtft) framebuffer copy driver, i.e. lines such as dtoverlay=waveshare35xx should be removed from /boot/config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Similarly, if there are touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. There is not provision for a touch interface with this driver.
+A new approach is to use the [**Custom SPI LCD driver**](/fbcp) at [**juj**](https://github.com/juj/fbcp-ili9341). This driver does not use the [**notro/fbtft**](https://github.com/notro/fbtft) framebuffer copy (FBCP) driver, i.e. lines such as dtoverlay=waveshare35xx should be removed from /boot/config.txt. This program also does not use the default SPI driver, so a line such as dtparam=spi=on in /boot/config.txt should also be removed. Similarly, if there are touch controller related dtoverlays active, such as dtoverlay=ads7846 those should be removed. There is not provision for a touch interface with this driver.
 
 **I used the following to make the driver:**
 
