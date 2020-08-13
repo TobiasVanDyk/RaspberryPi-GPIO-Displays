@@ -8,8 +8,8 @@ Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested 
 
 The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 <p align="left">
-<img src="images/Wave35b-v2.jpg" width="300" />  
-<img src="images/Wave35c.jpg" width="300" />  
+<img src="images/Wave35b-v2.jpg" width="250" />  
+<img src="images/Wave35c.jpg" width="250" />  
 <br>
     
 The set of eight photos below, show the results of using the Waveshare drivers with the (May 2020) 4.19 kernel. This can be compared to the results when using the SPI DMA accelerated driver with the new (July 2020) kernel 5.4, as detailed in the next section.
@@ -78,18 +78,14 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 
-**Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD (C) 125 MHz SPI:**      
+**Kernel 5.4 + new standard dtoverlay fbcp drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD type (C) and type (B) revision 2):**      
 <p align="left">
-<img src="images/Pi3BK54LCDc-1.jpg" width="300" />  
-<img src="images/Pi3BK54LCDc-2.jpg" width="300" />  
+<img src="images/Pi3BK54LCDc-1.jpg" width="200" />  
+<img src="images/Pi3BK54LCDc-2.jpg" width="200" />     
+<img src="images/Pi3BK54LCDbv2-1.jpg" width="200" />  
+<img src="images/Pi3BK54LCDbv2-2.jpg" width="200" />  
 <br>
-    
-**Kernel 5.4 is now functional with new standard dtoverlay fb drivers (Raspberry Pi 3B+ and both Waveshare 3.5" LCD (B) revision 2):**      
-<p align="left">
-<img src="images/Pi3BK54LCDbv2-1.jpg" width="300" />  
-<img src="images/Pi3BK54LCDbv2-2.jpg" width="300" />  
-<br>
-    
+
 **Previously:** A recent kernel update to version 5.4, changed the GPIO configuration for a number of small directly connected SPI LCD displays for the Raspberry Pi. Refer to this [**list of Raspberry Pi discussion Forum topics**](Discussion-RaspberryPiForum-LCDKernel54.txt). The reason seems to be that GPIO descriptors have been changed from pin numbers to labels. In [**Linux Staging fbtft Switch to the gpio descriptor interface**](https://github.com/torvalds/linux/commit/c440eee1a7a1d0f2d5fc2ee6049e4a05da540f01): *"This switches the fbtft driver to use GPIO descriptors rather than numerical gpios."* 
 
 I used a nightly kernel `2020-08-06-raspios-buster-nightly-armhf` with a `Raspberry Pi 3B+ with a Waveshare type (B) rev2 3.5" LCD`, and a `Raspberry Pi 4 (4GB) with a Waveshare type (C) fast SPI 3.5" LCD`, for the description as outlined, below.
