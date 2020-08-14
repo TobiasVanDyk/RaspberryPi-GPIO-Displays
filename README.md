@@ -1,6 +1,6 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the waveshare35bv2 folder. Both of these ILI9486 LCD displays `function well with the new kernel 5.4 - but only tested here for the RaspberryPi 3B+`. *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
+**Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays `function well with the new kernel 5.4 - but only tested here for the RaspberryPi 3B+`. *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
 
 
 ### Kernel 4.19
@@ -42,11 +42,11 @@ The more robust Raspberry Pi 3B+ was used instead of the Raspberry Pi 4B, becaus
     
 ### Kernel 5.4  
 
-**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder waveshare35bv2. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+). 
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder Waveshare. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+). 
 
 As an alternative use one of the following two methods for working kernel 5.4 and Raspberry Pi3B+ dtoverlay drivers:
 
-(1) Follow the Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2 LCD, from here in the folder waveshare35bv2 . 
+(1) Follow the Waveshare Wiki instructions to install the Waveshare type C or B rev 2 LCD, then reboot and replace the waveshare35c.dtbo or waveshare35b-v2.dtbo in /boot/overlays/ with the one from swkim01 in github, or for the Type B revision 2 LCD, from here in the folder Waveshare. 
 
 (2) Follow the instructions here in the goodTFT folder to install the Waveshare type C or B rev 2 LCD, and then reboot.
 
@@ -70,7 +70,7 @@ display_rotate=0
 ```
 Make sure the line hdmi_cvt=480 320 60 6 0 0 0 has the equal sign, because the waveshare script is incorrect.
 
-The folders swkim01 and waveshare35bv2, contain working config.txt and the dtbo files (as well as the dts source files).
+The folders swkim01 and Waveshare, contain working config.txt and the dtbo files (as well as the dts source files).
 
 For more information about this kernel 5.4 fix, see the following links:
 * [**Waveshare 2.8" lcd and latest Pi OS**](https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=281023)
@@ -150,13 +150,8 @@ The first image is the result of the first run of the driver (1920x1080 resoluti
     
 Problems with these SPI LCD displays have been mentioned on the main [**Raspberry Pi kernel 5.4 update forum**](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=269769), but the solution presented there is only suitable for the older 3.2" type B and 3.5" type A Waveshare LCD's, which are no longer in production. *There are indications that the framebuffer driver problem may be as simple as changing the polarity of the gpio reset pin from 0 to 1.*
 
-No - changing tft35a@0:reset-gpios:0 to tft35a@0:reset-gpios:1 with a hex editor in the dtb driver had no effect.
-
 `Yes - a recent change (see swkim01 in github) has changed reset-gpios = <&gpio 25 1>; and the driver now functions with kernel 5.4`
 [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 
-<br>
-<p align="left">
-<img src="images/reset-gpios.png" width="800" />  
-<br
+
     
