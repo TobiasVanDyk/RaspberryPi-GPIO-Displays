@@ -53,7 +53,7 @@ As an alternative use one of the following two methods for working kernel 5.4 an
 (2) Follow the instructions here in the goodTFT folder to install the Waveshare type C or B rev 2 LCD, and then reboot.
 
 **Compiling new SPI LCD drivers for kernel 5.4:** 
-* Edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and substitute 1 for 0 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). 
+* Edit the dts files for the type C and B revision 2 LCD displays from the swkim01 Github page, and change the 0 to 1 for both the reset and pendown GPIO's (reset-gpios = <&gpio 25 1>;  pendown-gpio = <&gpio 17 1>;). 
 * Then get a newer version of dtc:  git clone git://git.kernel.org/pub/scm/utils/dtc/dtc.git, and then do make.
 * Copy the new dts files into the dtc folder as well as the dtc.sh script from swkim01. 
 * Then do: sudo dtc -@ -I dts -O dtb -o waveshare35c.dtbo waveshare35c.dts. Ignore the spidev warning. 
