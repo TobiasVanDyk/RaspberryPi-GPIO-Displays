@@ -1,7 +1,9 @@
 # RaspberryPi-GPIO-Displays
 
-**Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays `function well with the new kernel 5.4 - but only tested here for the RaspberryPi 3B+`. *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
+**Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays `function well with the new kernel 5.4 - but only tested here for the RaspberryPi 3B+`. 
+I also seems to be working as well for a Raspberry Pi 4: [**Display 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815) and [**Display 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150).
 
+*Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
 
 ### Kernel 4.19
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
