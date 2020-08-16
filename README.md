@@ -83,7 +83,7 @@ For more information about this kernel 5.4 fix, see the following links:
 
 **Update 16 Aug 2020:** **The standard dt-overlay drivers are now confirmed to be working for a Raspberry Pi 4B as well:**
 
-After the git clone of the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
+After the git clone of the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i.e add the =).
 
 ```
 git clone https://github.com/Zaryob/LCD-show.git
