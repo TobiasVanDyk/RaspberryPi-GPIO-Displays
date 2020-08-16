@@ -41,7 +41,7 @@ hdmi_force_hotplug=1
 <img src="images/RPi3BPK419LCDC-2.jpg" width="200" />     
 <br>
 
-The more robust Raspberry Pi 3B+ was mainly used instead of the Raspberry Pi 4B, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs. The Raspberry Pi 4B does work with both displays using kernel 4.19.
+The more robust Raspberry Pi 3B+ was mainly used instead of the Raspberry Pi 4B, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs. The Raspberry Pi 4B does work with both displays using kernel 4.19 and 5.45.
     
 ### Kernel 5.45  
 
