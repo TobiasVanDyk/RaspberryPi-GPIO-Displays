@@ -95,7 +95,7 @@ chmod +x LCD35C-show
 sudo ./LCD35C-show
 sudo reboot
 ```
-The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020.
+The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Also see the [**Video of Raspberry Pi 4B and kernel 5.4 with Waveshare LCD C**](VideoPi4BK54LC35C.mp4).
 
 **Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 4B and Waveshare 3.5" LCD type (C):** 
 <p align="left">
