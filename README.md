@@ -16,7 +16,7 @@ The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12
     
 The set of eight photos below, show the results of using the Waveshare drivers with the (May 2020) 4.19 kernel. This can be compared to the results when using the SPI DMA accelerated driver with the new (July 2020) kernel 5.4, as detailed in the next section.
 
-In order to obtain dual HDMI LCD displays add the following lines in /boot/config.txt:
+In order to obtain dual (HDMI and SPI-LCD) displays, add the following lines in /boot/config.txt:
 ```
 hdmi_group=2
 hdmi_mode=87
