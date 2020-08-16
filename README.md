@@ -45,6 +45,25 @@ The more robust Raspberry Pi 3B+ was mainly used instead of the Raspberry Pi 4B,
     
 ### Kernel 5.45  
 
+**Update 16 Aug 2020:** **The standard dt-overlay drivers are now confirmed to be working for a Raspberry Pi 4B as well:**
+
+After the git clone of the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i.e add the =).
+
+```
+git clone https://github.com/Zaryob/LCD-show.git
+cd LCD-show/
+chmod +x LCD35C-show
+sudo ./LCD35C-show
+sudo reboot
+```
+The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Also see the [**Video of Raspberry Pi 4B and kernel 5.4 with Waveshare LCD C**](VideoPi4BK54LC35C.mp4).
+
+**Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 4B and Waveshare 3.5" LCD type (C):** 
+<p align="left">
+<img src="images/Pi4K54LCD35c-1.jpg" width="300" />  
+<img src="images/Pi4K54LCD35c-2.jpg" width="300" />     
+<br>
+
 **Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder Waveshare. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+ and 4B for the type C display). 
 
 As an alternative use one of the following two methods for working kernel 5.4 and Raspberry Pi3B+ dtoverlay drivers:
@@ -80,26 +99,6 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
-
-**Update 16 Aug 2020:** **The standard dt-overlay drivers are now confirmed to be working for a Raspberry Pi 4B as well:**
-
-After the git clone of the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i.e add the =).
-
-```
-git clone https://github.com/Zaryob/LCD-show.git
-cd LCD-show/
-chmod +x LCD35C-show
-sudo ./LCD35C-show
-sudo reboot
-```
-The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Also see the [**Video of Raspberry Pi 4B and kernel 5.4 with Waveshare LCD C**](VideoPi4BK54LC35C.mp4).
-
-**Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 4B and Waveshare 3.5" LCD type (C):** 
-<p align="left">
-<img src="images/Pi4K54LCD35c-1.jpg" width="300" />  
-<img src="images/Pi4K54LCD35c-2.jpg" width="300" />     
-<br>
-
 
 **Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 3B+ and Waveshare 3.5" LCD type (C) and type (B) revision 2):**      
 <p align="left">
