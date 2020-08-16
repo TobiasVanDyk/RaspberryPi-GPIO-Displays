@@ -43,7 +43,7 @@ hdmi_force_hotplug=1
 
 The more robust Raspberry Pi 3B+ was mainly used instead of the Raspberry Pi 4B, because of the latter's fiddly (*adjective: complicated or detailed and awkward to do or use*), micro-hdmi connector - I did not want to break it with frequent change-overs. The Raspberry Pi 4B does work with both displays using kernel 4.19.
     
-### Kernel 5.4  
+### Kernel 5.45  
 
 **Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder Waveshare. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+ and 4B for the type C display). 
 
