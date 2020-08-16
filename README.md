@@ -86,7 +86,7 @@ and it is confirmed to be working as well for a Raspberry Pi 4:
 * [**Display remains white after kernel update 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815)
 * [**Display remains white after kernel update 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150)
 
-After the git clone of the Zaryob edit the LCD35C-show and comment out the sudo reboot. Then proceed as shown below but before the sudo reboot edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
+After the git clone of the Zaryob github edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
 
 ```
 git clone https://github.com/Zaryob/LCD-show.git
