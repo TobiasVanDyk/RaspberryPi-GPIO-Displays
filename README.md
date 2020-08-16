@@ -45,7 +45,7 @@ The more robust Raspberry Pi 3B+ was mainly used instead of the Raspberry Pi 4B,
     
 ### Kernel 5.4  
 
-**Update 11 and 16 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder Waveshare. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+ and 4B for the type C display). 
+**Update 11 Aug 2020:** There are new driver files for both the Waveshare Type C (Fast SPI) and type B LCD displays. For the first it is on the [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), and the type B version 2 display is here in the folder Waveshare. Both these displays function well with kernel 5.4 (using a Raspberry Pi 3B+ and 4B for the type C display). 
 
 As an alternative use one of the following two methods for working kernel 5.4 and Raspberry Pi3B+ dtoverlay drivers:
 
@@ -82,7 +82,7 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 * [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show)
 
-and it is confirmed to be working as well for a Raspberry Pi 4:
+**Update 16 Aug 2020:** **It is now confirmed to be working as well for a Raspberry Pi 4B as well:**
 
 * [**Display remains white after kernel update 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815)
 * [**Display remains white after kernel update 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150)
