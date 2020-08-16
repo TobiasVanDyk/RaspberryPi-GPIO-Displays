@@ -82,7 +82,7 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
 * [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show)
 
-**Update 16 Aug 2020:** **It is now confirmed to be working as well for a Raspberry Pi 4B as well:**
+**Update 16 Aug 2020:** **The standard dt-overlay drivers are now confirmed to be working for a Raspberry Pi 4B as well:**
 
 * [**Display remains white after kernel update 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815)
 * [**Display remains white after kernel update 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150)
