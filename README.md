@@ -79,6 +79,7 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
+* [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show)
 
 and it seems to be working as well for a Raspberry Pi 4:
 
