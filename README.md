@@ -80,14 +80,10 @@ For more information about this kernel 5.4 fix, see the following links:
 * [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 * [**Display remains white after kernel update**](https://github.com/goodtft/LCD-show/issues/223)
 * [**White Screen after every Boot, maybe because of newest Kernel?**](https://github.com/rootzoll/raspiblitz/issues/1436)
-* [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show)
 
 **Update 16 Aug 2020:** **The standard dt-overlay drivers are now confirmed to be working for a Raspberry Pi 4B as well:**
 
-* [**Display remains white after kernel update 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815)
-* [**Display remains white after kernel update 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150)
-
-After the git clone of the Zaryob github edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
+After the git clone of the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
 
 ```
 git clone https://github.com/Zaryob/LCD-show.git
