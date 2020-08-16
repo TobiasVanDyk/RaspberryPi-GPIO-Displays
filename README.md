@@ -86,7 +86,7 @@ and it is confirmed to be working as well for a Raspberry Pi 4:
 * [**Display remains white after kernel update 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815)
 * [**Display remains white after kernel update 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150)
 
-After the git clone of the Zaryob edit the LCD35C-show and comment out the sudo reboot. Then proceed as follows. Before the sudo reboot edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
+After the git clone of the Zaryob edit the LCD35C-show and comment out the sudo reboot. Then proceed as shown below but before the sudo reboot edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i..e add the =).
 
 ```
 git clone https://github.com/Zaryob/LCD-show.git
@@ -96,9 +96,11 @@ sudo ./LCD35C-show
 sudo reboot
 ```
 The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nigtly kernel 2020-08-12-raspios-buster-nightly-armhf.img.
+
+**Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 4B and Waveshare 3.5" LCD type (C):** 
 <p align="left">
 <img src="images/Pi4K54LCD35c-1.jpg" width="300" />  
-<img src="images/Pi4K54LCD35c-1.jpg" width="300" />     
+<img src="images/Pi4K54LCD35c-2.jpg" width="300" />     
 <br>
 
 
