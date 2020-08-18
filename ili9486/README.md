@@ -1,6 +1,6 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
-**Update 16 Aug 2020:** **The standard dt-overlay drivers have now been confirmed to be also working for a Raspberry Pi 4B (4GB):** See the [**Video of Raspberry Pi 4B and kernel 5.45 with Waveshare LCD type C**](VideoPi4BK54LC35C.mp4) or refer to [**Display 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815) and [**Display 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150). Instructions are as detailed below.
+**Update 16 Aug 2020:** **The standard dt-overlay drivers have now been confirmed to be also working for a Raspberry Pi 4B (4GB):** See the [**Video of Raspberry Pi 4B and kernel 5.45 with Waveshare LCD type C**](../VideoPi4BK54LC35C.mp4) or refer to [**Display 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815) and [**Display 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150). Instructions are as detailed below.
 
 **Update 11 Aug 2020:** `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays function well with the new kernel 5.4 - and tested here with the RaspberryPi 3B+ and 4B. 
 
@@ -56,7 +56,7 @@ chmod +x LCD35C-show
 sudo ./LCD35C-show
 sudo reboot
 ```
-The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Also see the [**Video of Raspberry Pi 4B and kernel 5.4 with Waveshare LCD C**](VideoPi4BK54LC35C.mp4). Folder [**pi4B-lcdC**](pi4B-lcdC) contains all the relevant configuration files as used for this particular setup.
+The result is shown below - working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Also see the [**Video of Raspberry Pi 4B and kernel 5.4 with Waveshare LCD C**](../VideoPi4BK54LC35C.mp4). Folder [**pi4B-lcdC**](pi4B-lcdC) contains all the relevant configuration files as used for this particular setup.
 
 **Kernel 5.4 + new dtoverlay fbcp drivers (Raspberry Pi 4B and Waveshare 3.5" LCD type (C):** 
 <p align="left">
