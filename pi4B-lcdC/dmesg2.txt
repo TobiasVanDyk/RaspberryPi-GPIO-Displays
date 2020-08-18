@@ -1,1 +1,0 @@
-[    7.404202] graphics fb1: fb_ili9486 frame buffer, 480x320, 300 KiB video memory, 32 KiB buffer memory, fps=33, spi0.0 at 115 MHz
