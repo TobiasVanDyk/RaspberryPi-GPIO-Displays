@@ -1,4 +1,4 @@
-# ST7789 Displays
+# ILI9431 Displays
 
 More configuration details soon...
 <p align="left">
