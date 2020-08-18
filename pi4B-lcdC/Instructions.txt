@@ -1,9 +1,0 @@
-After the git clone of the Zaryob github Zaryob LCD-show New Waveshare Type C LCD, edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line hdmi_cvt=480 320 60 1 0 0 0 (i.e add the =).
-
-git clone https://github.com/Zaryob/LCD-show.git
-cd LCD-show/
-chmod +x LCD35C-show
-sudo ./LCD35C-show
-sudo reboot
-
-The result is working for a Raspberry Pi 4B (4GB) and a Waveshare 3.5" LCD type C using the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img with all updates up to 16 August 2020. Folder pi4B-lcdC contains all the relevant configuration files as used for this particular setup.
