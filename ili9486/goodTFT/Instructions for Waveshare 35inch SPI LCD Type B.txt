@@ -1,0 +1,9 @@
+Instructions for Waveshare 3.5" IPS SPI LCD Type B revision 2:
+
+1. git clone https://github.com/goodtft/LCD-show.git
+2. Copy LCD35Bv2-show into LCD-show folder
+3. Copy waveshare35bv2-overlay.dtb into LCD-show/usr folder
+4. chmod -R 755 LCD-show
+5. cd LCD-show
+6. sudo ./LCD35Bv2-show
+7. Reboot
