@@ -10,7 +10,7 @@ SDCard as supplied will not function with a 3v3 MCU. Replace the 3 x 1k series r
 
 The display as supplied is not in a Raspberry Pi compatible pin format. Details will be given below to connect it to a Raspberry Pi standard 40 pin GPIO connector.
 
-This is a schematic applicable to the version a shown above:
+This is a schematic applicable to the version as shown above:
 <p align="left">
 <img src="images/schematic1.jpg" width="500" />  
 <br>
