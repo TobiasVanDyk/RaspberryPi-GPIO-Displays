@@ -8,3 +8,5 @@
 
 SDCard as supplied will not function with a 3v3 MCU. Replace the 3 x 1k series resistors R1, R2, R3 with 0 ohm resistors or a solder bridge.
 
+Display as supplied is not in a Raspberry Pi compatible pin format. Details will be given below to connect it to a Raspberry Pi standard 40 pin GPIO connector.
+
