@@ -5,7 +5,7 @@
 **2.4 inch Model 320x240:** 
 <p align="left">
 <img src="images/pic1.jpg" width="300" />  
-<img src="images/pic2.jpg" width="300" /> 
+<img src="images/pic2.jpg" width="250" /> 
 <br>
 The SDCard as configured on this model will not function when interfaced with a 3v3 MCU. To correct it, replace the 3 x 1k series resistors R1, R2, R3 with 0 ohm resistors or a solder bridge.
 
