@@ -35,19 +35,21 @@ swkim01 has compiled a waveshare ILI9340 driver for kernel 5.4 that can be used 
 
 Now use the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line dtoverlay=waveshare35c:rotate=90 to dtoverlay=waveshare32b:rotate=270 (i.e add the overlay from swkim01).
 
-(4) git clone https://github.com/Zaryob/LCD-show.git
-(5) cd LCD-show/
-(6) chmod +x LCD35C-show
-(7) sudo ./LCD35C-show
-(8) sudo reboot
+* git clone https://github.com/Zaryob/LCD-show.git
+* cd LCD-show/
+* chmod +x LCD35C-show
+* sudo ./LCD35C-show
+* sudo reboot
 
 The result is shown below:
 <p align="left">
-<img src="images/pic10.jpg" width="200" />  
-<img src="images/pic11.jpg" width="200" />  
-<img src="images/pic12.jpg" width="200" />  
+<img src="images/pic10.jpg" width="800" />  
 <br>
-
+ 
+<p align="left">
+<img src="images/pic11.jpg" width="400" />  
+<img src="images/pic12.jpg" width="40" />  
+<br>
 
 
  
