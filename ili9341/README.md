@@ -55,7 +55,7 @@ The result is shown below:
 <br>
 
 ### Kernel 4.19
-I used the 2020-08-12-raspios-buster-nightly-armhf.img without any updates, ab=nd the goodtft LCD24-show driver. The result is shown below:
+I used the 2020-08-12-raspios-buster-nightly-armhf.img without any updates, and the [**GoodTFFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. The result is as shown below:
 <p align="left">
 <img src="images/pic20.jpg" width="400" />  
 <br>
