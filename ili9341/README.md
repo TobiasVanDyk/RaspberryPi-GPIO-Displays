@@ -2,6 +2,8 @@
 
 [**ElectroDragon (EDS) LCD Displays SPI SD-Card Touch Size 1.8 to 4.0 inches**](https://www.electrodragon.com/product/eds-tft-lcd-lcm-spi-interface-variable1-82-2/)
 
+The EDS 2.2" and 2.4" and 2.8" and 3.2" inch displays are ILI9341 at 320x240. Only the 2.2" has no resistive touch overlay.
+"
 **2.4 inch Model 320x240:** 
 Top and bottom and schematic:
 <p align="left">
@@ -51,7 +53,7 @@ The result is shown below:
  
 <p align="left">
 <img src="images/pic11.jpg" width="400" />  
-<img src="images/pic12.jpg" width="400" />  
+<img src="images/pic12.jpg" width="300" />  
 <br>
 
 ### Kernel 4.19
