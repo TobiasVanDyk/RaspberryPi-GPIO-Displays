@@ -9,6 +9,7 @@
 ### Raspberry Pi ILI9341 GPIO Displays
 
 [**Electrodragon ILI9341 SPI Displays**](ili9341)
+[**Waveshare ILI9341 SPI Display**](ili9341)
 
 
 ### Raspberry Pi ST7789 GPIO Displays
