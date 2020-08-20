@@ -27,7 +27,7 @@ Connect the display to Raspberry Pi (3B+ used):
 |8 LED        | 1	   | +3v3   |  
 |9 MISO       |  	   |   NC   | 
 
-### Kerneel 5.45
+### Kernel 5.45
 I used the nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img and the dts driver from [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), who has compiled a waveshare ILI9340 driver for kernel 5.4 that can also be used for this type of ILI9341 LCD display:
 
 * git clone https://github.com/swkim01/waveshare-dtoverlays.git
