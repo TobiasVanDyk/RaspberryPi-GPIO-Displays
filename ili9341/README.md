@@ -27,7 +27,7 @@ Connect the display to Raspberry Pi (3B+ used):
 |8 LED        | 1	   | +3v3   |  
 |9 MISO       |  	   |   NC   | 
 
-swkim01 has compiled a waveshare ILI9340 driver for kernel 5.4 that can be used for the ILI9341 LCD displays here:
+[**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) has compiled a waveshare ILI9340 driver for kernel 5.4 that can be used for this type of ILI9341 LCD display:
 
 * git clone https://github.com/swkim01/waveshare-dtoverlays.git
 * sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overlay.dtb
