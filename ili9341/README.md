@@ -40,12 +40,13 @@ sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
 ```
 
 Then use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line dtoverlay=waveshare35c:rotate=90 to dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). Some of the configuration files and the driver files are in the folder kernel545. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
-
-* git clone https://github.com/Zaryob/LCD-show.git
-* cd LCD-show/
-* chmod +x LCD35C-show
-* sudo ./LCD35C-show
-* sudo reboot
+```
+git clone https://github.com/Zaryob/LCD-show.git
+cd LCD-show/
+chmod +x LCD35C-show
+sudo ./LCD35C-show
+sudo reboot
+```
 
 The result is shown below:
 <p align="left">
@@ -59,11 +60,12 @@ The result is shown below:
 
 ### Kernel 4.19
 I used the 2020-08-12-raspios-buster-nightly-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
-
-* git clone https://github.com/goodtft/LCD-show.git
-* chmod -R 755 LCD-show
-* cd LCD-show/
-* sudo ./LCD24-show
+```
+git clone https://github.com/goodtft/LCD-show.git
+chmod -R 755 LCD-show
+cd LCD-show/
+sudo ./LCD24-show
+```
 
 The result is as shown below:
 <p align="left">
