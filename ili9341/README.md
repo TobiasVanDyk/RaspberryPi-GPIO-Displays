@@ -48,7 +48,7 @@ The result is shown below:
  
 <p align="left">
 <img src="images/pic11.jpg" width="400" />  
-<img src="images/pic12.jpg" width="40" />  
+<img src="images/pic12.jpg" width="400" />  
 <br>
 
 
