@@ -27,7 +27,7 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 |8 LED +3v    | 1	   | +3v3   |  
 |9 MISO       |  	   |   NC   | 
 
-*Note: Sometimes other Raspberry Pi pins are used for Reset and Data Control such as pin 22 (gpio 25) for reset and pin 18 (gpio 24) for dc. The pins numbers in the table above are those used by goodtft in his LCD24-show driver, and also by swkim01 for hist waveshare32b driver. [**Notro**](https://github.com/notro/fbtft/blob/master/dts/overlays/rpi/rpi-display-overlay.dts) has a dts driver for the ili9341 but that uses different dc and reset pins (dc-gpios = <&gpio 24 0>; reset-gpios = <&gpio 23 0>;) and has not been tried (i.e. compiled to a dtbo driver after changing it to reset-gpios = <&gpio 23 1>;).*
+*Note: Sometimes other Raspberry Pi pins are used for Reset and Data Control such as pin 22 (gpio 25) for reset and pin 18 (gpio 24) for dc. The pin numbers in the table above are those used by goodtft in his LCD24-show driver, and are also used by swkim01 for hist waveshare32b driver. [**Notro**](https://github.com/notro/fbtft/blob/master/dts/overlays/rpi/rpi-display-overlay.dts) has a dts driver for the ili9341 but that uses different dc and reset pins (dc-gpios = <&gpio 24 0>; reset-gpios = <&gpio 23 0>;) and has not been tried (i.e. compiled to a dtbo driver after changing it to reset-gpios = <&gpio 23 1>;).*
 
 ### Kernel 5.45
 I used a nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img, and the dts driver from [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), who has compiled a waveshare ILI9340 driver for kernel 5.4 that can also be used for this type of ILI9341 LCD display:
