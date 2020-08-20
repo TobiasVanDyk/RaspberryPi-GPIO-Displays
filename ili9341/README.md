@@ -17,13 +17,13 @@ Connect the display to Raspberry Pi (3B+ used):
 
 |     LCD     | Pin  | RaspPi |  
 |-------------|------|--------| 
-|1 Vcc +5v    |	2 	 |  +5v   |  
+|1 Vcc +5v    |	2 	  |  +5v   |  
 |2 Gnd 	      |	6    |  Gnd   |  
-|3 LCD-CS S   | 24	 | GPIO 8 | 
+|3 LCD-CS S   | 24	  | GPIO 8 | 
 |4 RST Reset  |	13 	 | GPIO 27| 
 |5 DC         | 15 	 | GPIO 22|  
 |6 MOSI       |	19 	 | GPIO 10|  
-|7 SCLK       | 23	 | GPIO 11| 
+|7 SCLK       | 23	  | GPIO 11| 
 |8 LED        | 1	   | +3v3   |  
 |9 MISO       |  	   |   NC   | 
 
@@ -43,7 +43,7 @@ Now use the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https:/
 The result is shown below:
 <p align="left">
 <img src="images/pic10.jpg" width="200" />  
-<img src="images/piv11" width="200" />  
+<img src="images/pic11" width="200" />  
 <img src="images/pic12" width="200" />  
 <br>
 
