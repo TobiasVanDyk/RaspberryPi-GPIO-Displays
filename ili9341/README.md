@@ -33,10 +33,11 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 
 ### Kernel 5.4.58
 I used a nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img, and the dts driver from [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), who has compiled a waveshare ILI9340 driver for kernel 5.4 that can also be used for this type of ILI9341 LCD display:
-
-* git clone https://github.com/swkim01/waveshare-dtoverlays.git
-* sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overlay.dtb
-* sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
+```
+git clone https://github.com/swkim01/waveshare-dtoverlays.git
+sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overlay.dtb
+sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
+```
 
 Then use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and correct the line dtoverlay=waveshare35c:rotate=90 to dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). Some of the configuration files and the driver files are in the folder kernel545. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
 
