@@ -43,8 +43,8 @@ Now use the Zaryob github [**Zaryob LCD-show New Waveshare Type C LCD**](https:/
 The result is shown below:
 <p align="left">
 <img src="images/pic10.jpg" width="200" />  
-<img src="images/pic11" width="200" />  
-<img src="images/pic12" width="200" />  
+<img src="images/pic11.jpg" width="200" />  
+<img src="images/pic12.jpg" width="200" />  
 <br>
 
 
