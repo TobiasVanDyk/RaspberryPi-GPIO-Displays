@@ -58,7 +58,7 @@ The result is shown below:
 <img src="images/pic12.jpg" width="300" />  
 <br>
 
-Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-2/3.2inch-rpi-lcd-b.htm) will also work in excactly the same way as detailed above, with kernel 5.45
+Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-2/3.2inch-rpi-lcd-b.htm) will also work in the same way as detailed above, with kernel 5.45.
 
 ### Kernel 4.19
 I used the 2020-08-12-raspios-buster-nightly-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
