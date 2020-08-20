@@ -13,5 +13,18 @@ The SDCard as configured on this model will not function when interfaced with a 
 
 The display as supplied is also not in a Raspberry Pi GPIO compatible pin format. Details will be given below to connect it to a Raspberry Pi standard 40 pin GPIO connector.
 
+Connect the display to Raspberry Pi (3B+ used):
+==============================================
+LCD Pin Function    Raspberry Pi Pin Function
+Vcc  1  +5v         Pin 2 or 4       +5v
+Gnd  2              Pin 6            Gnd
+CS   3  LCD-CS      Pin 24           GPIO 8
+RST  4  Reset       Pin 13           GPIO 27
+DC   5              Pin 15           GPIO 22
+MOSI 6              Pin 19           GPIO 10
+SCLK 7              Pin 23           GPIO 11
+LED  9              Pin 1            +3v3
+MISO 10             NC 
+
 
 
