@@ -1,0 +1,14 @@
+git clone https://github.com/swkim01/waveshare-dtoverlays.git
+sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
+sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overlay.dtb
+
+git clone https://github.com/Zaryob/LCD-show.git
+cd LCD-show
+chmod +x LCD35C-show
+sudo ./LCD35C-show
+sudo nano /etc/rc.local
+sudo nano /boot/config.txt
+sudo reboot
+
+uname -a
+dmesg  | grep graphics
