@@ -15,7 +15,7 @@ The display as supplied is also not in a Raspberry Pi GPIO compatible pin format
 
 Table 1. Connect the display to Raspberry Pi (3B+ used):
 
-|     LCD     | Pin    RaspPi |  
+|     LCD     | Pin  | RaspPi |  
 |-------------|------|--------| 
 |1 Vcc +5v    |	2 	  |  +5v   |  
 |2 Gnd 	      |	6    |  Gnd   |  
