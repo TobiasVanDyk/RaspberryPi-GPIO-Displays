@@ -74,7 +74,7 @@ Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.co
 
 
 ### Kernel 4.19
-I used the 2020-08-12-raspios-buster-nightly-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
+I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
 ```
 git clone https://github.com/goodtft/LCD-show.git
 chmod -R 755 LCD-show
