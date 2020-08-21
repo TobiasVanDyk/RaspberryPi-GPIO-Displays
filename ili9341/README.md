@@ -47,7 +47,7 @@ sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overla
 sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
 ```
 
-After this use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and replace the line dtoverlay=waveshare35c:rotate=90 with the line dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). Some of the configuration files and the driver files are in the folder kernel545. Although config.txt has lines that should output to the main monitor via hdmi the resolution at 320x240 is too low for the large screen. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
+After this use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and replace the line dtoverlay=waveshare35c:rotate=90 with the line dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). 
 ```
 git clone https://github.com/Zaryob/LCD-show.git
 cd LCD-show/
@@ -55,6 +55,7 @@ chmod +x LCD35C-show
 sudo ./LCD35C-show
 sudo reboot
 ```
+Some of the configuration files and the driver files are in the folder kernel545. Although config.txt has lines (hdmi_cvt=320 240 60 6 0 0 0), that should output to the main hdmi monitor, the resolution at 320x240 is too low for the large screen. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
 
 The result is shown below:
 <p align="left">
