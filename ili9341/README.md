@@ -33,6 +33,12 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 
 *[**Notro**](https://github.com/notro/fbtft/blob/master/dts/overlays/rpi/rpi-display-overlay.dts) has a dts driver for the ili9341 but that uses different dc and reset pins (dc-gpios = <&gpio 24 0>; reset-gpios = <&gpio 23 0>;) and has not been tested (i.e. compiled to a dtbo driver after changing it to reset-gpios = <&gpio 23 1>; for kernel 5.45).*
 
+Here are two high resolution photos that show the connection between the EDS ili9341 LCD and a Raspberry Pi3B+. LCD-CS is blue, LCD-Reset is purple, DC is gray, MOSI is green SCLK is yellow, LED3v3 is orange, Vcc5vis red and GND is brown
+<p align="left">
+<img src="images/ili9341LCD-RPi3BPlus.jpg" width="350" />  
+<img src="images/ili9341LCD-RPi3BPlus2.jpg" width="350" />  
+<br>
+
 ### Kernel 5.4.58
 I used a nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img, and the dts driver from [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), who has compiled a waveshare ILI9340 driver for kernel 5.4 that can also be used for this type of ILI9341 LCD display:
 ```
@@ -41,7 +47,7 @@ sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b-overla
 sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
 ```
 
-After this use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and replace the line dtoverlay=waveshare35c:rotate=90 with the line dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). Some of the configuration files and the driver files are in the folder kernel545. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
+After this use the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show), edit his local copy of LCD35C-show and comment out the sudo reboot at the end. Then proceed as shown below, but before the sudo reboot, edit /boot/config.txt and replace the line dtoverlay=waveshare35c:rotate=90 with the line dtoverlay=waveshare32b:rotate=270 (i.e add the driver overlay for ili9341 from swkim01). Some of the configuration files and the driver files are in the folder kernel545. Although config.txt has lines that should output to the main monitor via hdmi the resolution at 320x240 is too low for the large screen. There is also a video ili9341kernel545.mp4 of the boot process with kernel 5.45 [**Video2**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9341kernel545.mp4)
 ```
 git clone https://github.com/Zaryob/LCD-show.git
 cd LCD-show/
