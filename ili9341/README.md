@@ -29,7 +29,7 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 |8 LED +3v    | 1	   | +3v3   |  
 |9 MISO       |  	   |   NC   | 
 
-*Note: Sometimes other Raspberry Pi pins are used for Reset and Data Control such as pin 22 (gpio 25) for reset and pin 18 (gpio 24) for dc. The pin numbers in the table above are those used by the [**goodtft LCD24-show driver**](https://github.com/goodtft/LCD-show/blob/master/LCD24-show), [**LCD Wiki LCD24-show**](http://www.lcdwiki.com/2.4inch_RPi_Display), and [**swkim01 waveshare32b driver**](https://github.com/swkim01/waveshare-dtoverlays/blob/master/waveshare32b.dts).* 
+*Note: Sometimes other Raspberry Pi pins are used for Reset and Data/Command such as pin 22 (gpio 25) for reset and pin 18 (gpio 24) for dc. The pin numbers in the table above are those used by the [**goodtft LCD24-show driver**](https://github.com/goodtft/LCD-show/blob/master/LCD24-show), [**LCD Wiki LCD24-show**](http://www.lcdwiki.com/2.4inch_RPi_Display), and [**swkim01 waveshare32b driver**](https://github.com/swkim01/waveshare-dtoverlays/blob/master/waveshare32b.dts).* 
 
 *[**Notro**](https://github.com/notro/fbtft/blob/master/dts/overlays/rpi/rpi-display-overlay.dts) has a dts driver for the ili9341 but that uses different dc and reset pins (dc-gpios = <&gpio 24 0>; reset-gpios = <&gpio 23 0>;) and has not been tested (i.e. compiled to a dtbo driver after changing it to reset-gpios = <&gpio 23 1>; for kernel 5.45). Similarly some of the [**other LCD wiki drivers**](http://www.lcdwiki.com/3.5inch_RPi_Display) use pin 22 for reset and pin 18 for dc.*
 
