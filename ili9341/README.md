@@ -33,7 +33,7 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 
 *[**Notro**](https://github.com/notro/fbtft/blob/master/dts/overlays/rpi/rpi-display-overlay.dts) has a dts driver for the ili9341 but that uses different dc and reset pins (dc-gpios = <&gpio 24 0>; reset-gpios = <&gpio 23 0>;) and has not been tested (i.e. compiled to a dtbo driver after changing it to reset-gpios = <&gpio 23 1>; for kernel 5.45).*
 
-Here are two high resolution photos that show the connection between the EDS ili9341 LCD and a Raspberry Pi3B+. LCD-CS is blue, LCD-Reset is purple, DC is gray, MOSI is green SCLK is yellow, LED+3v3 is orange, Vcc+5v is red and GND is brown
+Here are two high resolution photos that show the connection between the EDS ili9341 LCD and a Raspberry Pi3B+. LCD-CS is blue, LCD-Reset is purple, DC is gray, MOSI is green, SCLK is yellow, LED+3v3 is orange, Vcc+5v is red, and GND is brown
 <p align="left">
 <img src="images/ili9341LCD-RPi3BPlus.jpg" width="350" />  
 <img src="images/ili9341LCD-RPi3BPlus2.jpg" width="350" />  
