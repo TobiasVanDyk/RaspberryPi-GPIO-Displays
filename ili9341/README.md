@@ -63,12 +63,9 @@ Some of the configuration files and the driver files are in the folder kernel545
 
 The result is shown below:
 <p align="left">
-<img src="images/pic10.jpg" width="500" />  
-<br>
- 
-<p align="left">
+<img src="images/pic10.jpg" width="250" />  
 <img src="images/pic11.jpg" width="300" />  
-<img src="images/pic12.jpg" width="200" />  
+<img src="images/pic12.jpg" width="300" />  
 <br>
  
  
