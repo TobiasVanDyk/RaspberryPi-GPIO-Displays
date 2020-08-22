@@ -50,8 +50,8 @@ sudo cp waveshare-dtoverlays/waveshare32b.dtb /boot/overlays/waveshare32b.dtbo
 After this clone the Zaryob github [**Zaryob LCD-show**](https://github.com/Zaryob/LCD-show):
 * Then edit his local copy of LCD35C-show and comment out the sudo reboot at the end. 
 * Then proceed as shown below, but before doing a manual sudo reboot edit /boot/config.txt:
-* Replace the line 'dtoverlay=waveshare35c:rotate=90' with the line 'dtoverlay=waveshare32b:rotate=270' (i.e add the driver overlay for ili9341 from swkim01). 
-* Also change 'hdmi_cvt=480 320 60 6 0 0 0' to 'hdmi_cvt=320 240 60 6 0 0 0'. If the first is left in place (correct it by adding the missing =), then after reboot the LCD should attempt to display a 480x320 and the hdmi monitor should also display the same image. If the 320x240 setting is used only the LCD will show an image after reboot.
+* Replace the line `dtoverlay=waveshare35c:rotate=90` with the line `dtoverlay=waveshare32b:rotate=270` (i.e add the driver overlay for ili9341 from swkim01). 
+* Also change `hdmi_cvt=480 320 60 6 0 0 0` to `hdmi_cvt=320 240 60 6 0 0 0`. If the first is left in place (correct it by adding the missing =), then after reboot the LCD should attempt to display a 480x320 and the hdmi monitor should also display the same image. If the 320x240 setting is used only the LCD will show an image after reboot.
 ```
 git clone https://github.com/Zaryob/LCD-show.git
 cd LCD-show/
