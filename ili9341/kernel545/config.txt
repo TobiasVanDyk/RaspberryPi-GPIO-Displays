@@ -61,6 +61,10 @@ hdmi_force_hotplug=1
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
+# If 480x320 is used with 320x240 display
+# It is lkely that both hdmi and display show image at 480x320
+# If 320x240 used LCD show correct size but hdmi cannot display low setting
+#hdmi_cvt=480 320 60 6 0 0 0
 hdmi_cvt=320 240 60 6 0 0 0
 hdmi_drive=2
 display_rotate=0
