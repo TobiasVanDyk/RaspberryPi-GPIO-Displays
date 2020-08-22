@@ -90,7 +90,7 @@ I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the res
  
 Interestingly, the results for for a 480x320 resolution (LCD (attempted) and monitor display):
 <p align="left">
-<img src="images/LCDb-1.jpg" width="300" />  
+<img src="images/LCDb-1.jpg" width="320" />  
 <img src="images/LCDb-2.jpg" width="300" />  
 <br> 
  
