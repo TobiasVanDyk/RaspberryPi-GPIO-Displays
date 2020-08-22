@@ -97,7 +97,7 @@ Interestingly, the results for for a 480x320 resolution (LCD (attempted) and mon
 <br> 
  
 ### Kernel 4.19
-I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
+I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the EDS 2.4" display and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
 ```
 git clone https://github.com/goodtft/LCD-show.git
 chmod -R 755 LCD-show
