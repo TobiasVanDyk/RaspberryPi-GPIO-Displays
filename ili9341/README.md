@@ -63,9 +63,7 @@ Some of the configuration files and the driver files are in the folder kernel545
 
 The result is shown below:
 <p align="left">
-<img src="images/pic10.jpg" width="300" />  
-<img src="images/Backlcd32b.jpg" width="300" />  
-<img src="images/Frontlcd32b.jpg" width="300" />
+<img src="images/pic10.jpg" width="700" />  
 <br>
  
 <p align="left">
@@ -78,7 +76,9 @@ The result is shown below:
 
 The [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), also works with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct [**Raspberry Pi GPIO interface**](https://www.waveshare.com/wiki/File:3.2inch-RPi-LCD-B-Schematic.pdf), and do not need individual connections, as in Table 1. It connects to the Raspberry pi as below:
 <p align="left">
-<img src="images/Waveshare32LCDbPins.jpg" width="300" />  
+<img src="images/Waveshare32LCDbPins.jpg" width="300" /> 
+<img src="images/Backlcd32b.jpg" width="300" />  
+<img src="images/Frontlcd32b.jpg" width="300" />
 <br>
 I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the results are as below for 320x240 resolution (LCD only display):
 <p align="left">
