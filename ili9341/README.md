@@ -70,7 +70,10 @@ The result is shown below:
  
 [**Waveshare 3.2" type B Raspberry Pi SPI display**](https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-2/3.2inch-rpi-lcd-b.htm)
 
-Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), will also work with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct Raspberry Pi GPIO interface and do not need individual connections, as in Table 1.
+Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), will also work with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct [**Raspberry Pi GPIO interface**](https://www.waveshare.com/wiki/File:3.2inch-RPi-LCD-B-Schematic.pdf), and do not need individual connections, as in Table 1. It connects to the Raspberry pi as below:
+<p align="left">
+<img src="images/Waveshare32LCDbPins" width="400" />  
+<br>
 
 
 ### Kernel 4.19
