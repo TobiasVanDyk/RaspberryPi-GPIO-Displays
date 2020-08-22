@@ -9,7 +9,7 @@ Top and bottom and schematic:
 <p align="left">
 <img src="images/pic1.jpg" width="200" />  
 <img src="images/pic3.jpg" width="200" /> 
-<img src="images/schematic1.jpg" width="400" />  
+<img src="images/schematic1.jpg" width="300" />  
 <br>
 The SDCard as configured on this model will not function when interfaced with a 3v3 MCU. To correct it, replace the 3 x 1k series resistors R1, R2, R3 with 0 ohm resistors or a solder bridge. Also connect SD-CS to a 10k resistor pullup to 3v3.
 
@@ -36,7 +36,7 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 Here are two high resolution photos that show the connection between the EDS ili9341 LCD and a Raspberry Pi3B+. LCD-CS is blue, LCD-Reset is purple, DC is gray, MOSI is green, SCLK is yellow, LED+3v3 is orange, Vcc+5v is red, and GND is brown
 <p align="left">
 <img src="images/ili9341LCD-RPi3BPlus.jpg" width="300" />  
-<img src="images/ili9341LCD-RPi3BPlus2.jpg" width="300" />  
+<img src="images/ili9341LCD-RPi3BPlus2.jpg" width="280" />  
 <br>
 
 ### Kernel 5.4.58 or 5.4.59
