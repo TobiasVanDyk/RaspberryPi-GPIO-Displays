@@ -7,9 +7,9 @@ The EDS 2.2" and 2.4" and 2.8" and 3.2" inch displays are ILI9341 at 320x240. On
 **2.4 inch Model 320x240:** 
 Top and bottom and schematic:
 <p align="left">
-<img src="images/pic1.jpg" width="250" />  
-<img src="images/pic3.jpg" width="250" /> 
-<img src="images/schematic1.jpg" width="300" />  
+<img src="images/pic1.jpg" width="200" />  
+<img src="images/pic3.jpg" width="200" /> 
+<img src="images/schematic1.jpg" width="400" />  
 <br>
 The SDCard as configured on this model will not function when interfaced with a 3v3 MCU. To correct it, replace the 3 x 1k series resistors R1, R2, R3 with 0 ohm resistors or a solder bridge. Also connect SD-CS to a 10k resistor pullup to 3v3.
 
@@ -35,8 +35,8 @@ Table 1. Connect the display to Raspberry Pi (3B+ used):
 
 Here are two high resolution photos that show the connection between the EDS ili9341 LCD and a Raspberry Pi3B+. LCD-CS is blue, LCD-Reset is purple, DC is gray, MOSI is green, SCLK is yellow, LED+3v3 is orange, Vcc+5v is red, and GND is brown
 <p align="left">
-<img src="images/ili9341LCD-RPi3BPlus.jpg" width="350" />  
-<img src="images/ili9341LCD-RPi3BPlus2.jpg" width="350" />  
+<img src="images/ili9341LCD-RPi3BPlus.jpg" width="300" />  
+<img src="images/ili9341LCD-RPi3BPlus2.jpg" width="300" />  
 <br>
 
 ### Kernel 5.4.58 or 5.4.59
@@ -63,12 +63,12 @@ Some of the configuration files and the driver files are in the folder kernel545
 
 The result is shown below:
 <p align="left">
-<img src="images/pic10.jpg" width="700" />  
+<img src="images/pic10.jpg" width="500" />  
 <br>
  
 <p align="left">
-<img src="images/pic11.jpg" width="400" />  
-<img src="images/pic12.jpg" width="300" />  
+<img src="images/pic11.jpg" width="300" />  
+<img src="images/pic12.jpg" width="200" />  
 <br>
  
  
@@ -76,24 +76,24 @@ The result is shown below:
 
 The [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), also works with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct [**Raspberry Pi GPIO interface**](https://www.waveshare.com/wiki/File:3.2inch-RPi-LCD-B-Schematic.pdf), and do not need individual connections, as in Table 1. It connects to the Raspberry pi as below:
 <p align="left">
-<img src="images/Waveshare32LCDbPins.jpg" width="300" /> 
-<img src="images/Backlcd32b.jpg" width="300" />  
-<img src="images/Frontlcd32b.jpg" width="300" />
+<img src="images/Waveshare32LCDbPins.jpg" width="200" /> 
+<img src="images/Backlcd32b.jpg" width="200" />  
+<img src="images/Frontlcd32b.jpg" width="200" />
 <br>
 I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the results are as below for 320x240 resolution (LCD only display):
 <p align="left">
-<img src="images/LCDb-6.jpg" width="320" />  
-<img src="images/LCDb-3.jpg" width="300" />  
+<img src="images/LCDb-6.jpg" width="300" />  
+<img src="images/LCDb-3.jpg" width="250" />  
 <br> 
 <p align="left">
-<img src="images/LCDb-5.jpg" width="400" />  
-<img src="images/LCDb-4.jpg" width="380" />  
+<img src="images/LCDb-5.jpg" width="300" />  
+<img src="images/LCDb-4.jpg" width="280" />  
 <br> 
  
 Interestingly, the results for for a 480x320 resolution (LCD (attempted) and monitor display):
 <p align="left">
-<img src="images/LCDb-1.jpg" width="320" />  
-<img src="images/LCDb-2.jpg" width="300" />  
+<img src="images/LCDb-1.jpg" width="300" />  
+<img src="images/LCDb-2.jpg" width="250" />  
 <br> 
  
 ### Kernel 4.19
