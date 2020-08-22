@@ -81,8 +81,6 @@ I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the res
 <p align="left">
 <img src="images/LCDb-6.jpg" width="260 />  
 <img src="images/LCDb-3.jpg" width="240" />  
-<br> 
-<p align="left">
 <img src="images/LCDb-5.jpg" width="280" />  
 <img src="images/LCDb-4.jpg" width="220" />  
 <br> 
