@@ -63,7 +63,9 @@ Some of the configuration files and the driver files are in the folder kernel545
 
 The result is shown below:
 <p align="left">
-<img src="images/pic10.jpg" width="800" />  
+<img src="images/pic10.jpg" width="300" />  
+<img src="images/Backlcd32b.jpg" width="300" />  
+<img src="images/Frontlcd32b.jpg" width="300" />
 <br>
  
 <p align="left">
