@@ -39,7 +39,7 @@ Here are two high resolution photos that show the connection between the EDS ili
 <img src="images/ili9341LCD-RPi3BPlus2.jpg" width="350" />  
 <br>
 
-### Kernel 5.4.58
+### Kernel 5.4.58 or 5.4.59
 I used a nightly kernel 2020-08-12-raspios-buster-nightly-armhf.img, and the dts driver from [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays), who has compiled a waveshare ILI9340 driver for kernel 5.4 that can also be used for this type of ILI9341 LCD display:
 ```
 git clone https://github.com/swkim01/waveshare-dtoverlays.git
@@ -74,12 +74,20 @@ The result is shown below:
  
 [**Waveshare 3.2" type B Raspberry Pi SPI display**](https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-2/3.2inch-rpi-lcd-b.htm)
 
-Note that this means the [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), will also work with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct [**Raspberry Pi GPIO interface**](https://www.waveshare.com/wiki/File:3.2inch-RPi-LCD-B-Schematic.pdf), and do not need individual connections, as in Table 1. It connects to the Raspberry pi as below:
+The [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)), also works with the exact same procedure as outlined for the Electrodragon ILI9341 display above, and using kernel 5.45. The Waveshare display has a direct [**Raspberry Pi GPIO interface**](https://www.waveshare.com/wiki/File:3.2inch-RPi-LCD-B-Schematic.pdf), and do not need individual connections, as in Table 1. It connects to the Raspberry pi as below:
 <p align="left">
 <img src="images/Waveshare32LCDbPins.jpg" width="300" />  
 <br>
-
-
+I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the results are as below for 320x240 resolution (LCD only display):
+<p align="left">
+<img src="images/LCDb-6.jpg" width="300" />  
+<img src="images/LCDb-3.jpg" width="300" />  
+<br> 
+<p align="left">
+<img src="images/LCDb-5.jpg" width="400" />  
+<img src="images/LCDb-4.jpg" width="400" />  
+<br> 
+ 
 ### Kernel 4.19
 I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
 ```
