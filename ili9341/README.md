@@ -88,6 +88,12 @@ I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the res
 <img src="images/LCDb-4.jpg" width="380" />  
 <br> 
  
+Interestingly, the results for for a 480x320 resolution (LCD (attempted) and monitor display):
+<p align="left">
+<img src="images/LCDb-1.jpg" width="300" />  
+<img src="images/LCDb-2.jpg" width="300" />  
+<br> 
+ 
 ### Kernel 4.19
 I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. 
 ```
