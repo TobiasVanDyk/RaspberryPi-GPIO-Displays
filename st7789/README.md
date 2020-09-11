@@ -8,5 +8,5 @@ More configuration details soon...
 <p align="left">
 <img src="images/1inch54a.jpg" width="250" />  
 <img src="images/1inch54b.jpg" width="250" /> 
-<img src="images/1inch54b.jpg" width="250" />   
+<img src="images/1inch54c.jpg" width="250" />   
 <br>
