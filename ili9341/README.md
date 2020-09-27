@@ -1,5 +1,7 @@
 # ILI9341 Displays
 
+**Update 27 Sep 2020:** [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).
+
 [**ElectroDragon (EDS) LCD Displays SPI SD-Card Touch Size 1.8 to 4.0 inches**](https://www.electrodragon.com/product/eds-tft-lcd-lcm-spi-interface-variable1-82-2/)
 
 The EDS 2.2" and 2.4" and 2.8" and 3.2" inch displays are ILI9341 at 320x240. Only the 2.2" has no resistive touch overlay.
