@@ -2,7 +2,7 @@
 
 **Update 27 Sep 2020:** <br>
 [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).<br>
-[**GoodTFT has also updated drivers**](https://github.com/goodtft/LCD-show).
+[**GoodTFT also updated their LCDshow dtb drivers**](https://github.com/goodtft/LCD-show).
 
 **Update 16 Aug 2020:** **The standard dt-overlay drivers have now been confirmed to be also working for a Raspberry Pi 4B (4GB):** See the [**Video of Raspberry Pi 4B and kernel 5.45 with Waveshare LCD type C**](../VideoPi4BK54LC35C.mp4) or refer to [**Display 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815) and [**Display 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150). Instructions are as detailed below.
 
