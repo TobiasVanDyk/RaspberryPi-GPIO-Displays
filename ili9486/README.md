@@ -1,6 +1,8 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
-**Update 27 Sep 2020:** [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).
+**Update 27 Sep 2020:** 
+[**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).
+[**GoodTFT has also updated drivers**](https://github.com/goodtft/LCD-show).
 
 **Update 16 Aug 2020:** **The standard dt-overlay drivers have now been confirmed to be also working for a Raspberry Pi 4B (4GB):** See the [**Video of Raspberry Pi 4B and kernel 5.45 with Waveshare LCD type C**](../VideoPi4BK54LC35C.mp4) or refer to [**Display 1**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-670673815) and [**Display 2**](https://github.com/goodtft/LCD-show/issues/223#issuecomment-667666150). Instructions are as detailed below.
 
@@ -9,7 +11,7 @@
 *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
 
 ### Kernel 4.19
-Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
+Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
 
 The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 <p align="left">
