@@ -117,12 +117,13 @@ Table 2. Connect the Waveshare LCD type (B) display to Teensy 3.6:
 |------------|------|--------|------| 
 | Vcc +5v    |	2 	  | +5v    | 5v   |
 | Gnd 	      |	6    | Gnd    | Gnd  |
-| CE0        | 24	  | LCD-CD | 10   | 
 | SCLK       |	23 	 | SCK    | 13   |
+| MISO       | 21   | MISO   | 12   |  
+| MOSI       |	19 	 | MOSI   | 11   |
+| CE0        | 24	  | LCD-CD | 10   | 
 | GPIO22     | 15 	 | DC     | 9    |
-| MOSI       |	19 	 | MOSI   | 11   |  
 | GPIO27     | 13	  | Reset  | 8    | 
-| MISO       | 21   | MISO   | 12   |      
+    
 
 The result is as shown below:
 <p align="left">
