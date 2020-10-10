@@ -110,23 +110,11 @@ The result is as shown below:
 
 ### Arduino Teensy
 Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. 
-```
-git clone https://github.com/goodtft/LCD-show.git
-chmod -R 755 LCD-show
-cd LCD-show/
-sudo ./LCD24-show
-```
-
-The result is as shown below:
-<p align="left">
-<img src="images/### Kernel 4.19
-I used the 2020-05-27-raspios-buster-full-armhf.img without any updates, and the EDS 2.4" display and the [**GoodTFT**](https://github.com/goodtft/LCD-show) LCD24-show driver. See LCD-B-Teensy36.ino(LCD-B-Teensy36.ino) for details.
      
 ```
 Waveshare 3.2" LCD (b) rev 4 for raspberry Pi
 Use a ILI9340/41 chipset
 This is the Adafruit example graphicstest
-
 Raspberry Pi   Teensy 3.6
 Pin Name       Pin Name
 13  GPIO27     8   Reset
