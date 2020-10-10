@@ -109,23 +109,21 @@ The result is as shown below:
 <br>
 
 ### Arduino Teensy
-Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. See [LCD-B-Teensy36.ino](LCD-B-Teensy36.ino) for details.
-     
-```
-Waveshare 3.2" LCD (b) rev 4 for raspberry Pi
-Use a ILI9340/41 chipset
-This is the Adafruit example graphicstest
-Raspberry Pi   Teensy 3.6
-Pin Name       Pin Name
-13  GPIO27     8   Reset
-15  GPIO22     9   DC
-19  MOSI       11  MOSI
-21  MISO       12  MISO (NC here)
-23  SCLK       13  SCK
-24  CE0        10  CS-LCD
-2   5v         +5volt
-6   GND        GND (not AGND)
-```
+Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. See [LCD-B-Teensy36.ino](LCD-B-Teensy36.ino) for details. Waveshare 3.2" LCD (b) rev 4 for raspberry Pi (ILI9340/41 chipset) with Adafruit ILI9341 library and example graphicstest.
+
+Table 2. Connect the LCD (b) display to Teensy 3.6:
+
+|   RPi LCD  | Pin  | Teensy | Pin  |  
+|------------|------|--------|------| 
+| Vcc +5v    |	2 	  |  +5v   | 5v   |
+| Gnd 	      |	6    |  Gnd   | Gnd  |
+| CE0        | 24	  | LCD-CD | 10   | 
+| SCLK       |	23 	 | SCK    | 13   |
+| GPIO22     | 15 	 | DC     | 9    |
+| MOSI       |	19 	 | MOSI   | 11   |  
+| GPIO27     | 13	  | Reset  | 8    | 
+| MISO       | 21   | MISO   | 12   |      
+
 
 The result is as shown below:
 <p align="left">
