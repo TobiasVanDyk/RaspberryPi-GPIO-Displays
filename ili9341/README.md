@@ -108,7 +108,7 @@ The result is as shown below:
 <img src="images/pic20.jpg" width="300" />  
 <br>
 
-### Arduino Teensy
+### Waveshare LCD Type (B) and Arduino Teensy
 Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. Waveshare 3.2" LCD (b) rev 4 for raspberry Pi (ILI9340/41 chipset) with Adafruit ILI9341 library and example graphicstest. See [LCD-B-Teensy36.ino](LCD-B-Teensy36.ino) for details.
 
 Table 2. Connect the Waveshare LCD type (B) display to Teensy 3.6:
