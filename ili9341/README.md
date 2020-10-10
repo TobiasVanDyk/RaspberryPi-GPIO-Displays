@@ -109,7 +109,7 @@ The result is as shown below:
 <br>
 
 ### Arduino Teensy
-Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. See LCD-B-Teensy36.ino(LCD-B-Teensy36.ino) for details.
+Connection details are as below for a Teensy 3.6 using the Adafruit ILI9341 library. See [LCD-B-Teensy36.ino](LCD-B-Teensy36.ino) for details.
      
 ```
 Waveshare 3.2" LCD (b) rev 4 for raspberry Pi
