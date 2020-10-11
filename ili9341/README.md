@@ -1,5 +1,7 @@
 # ILI9341 Displays
 
+**Update 10 October 2020:** **Configuration details for using the Waveshare 3.2" LCB (B) revision 2 with the Teensy 3.6.**
+
 **Update 27 Sep 2020:** [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).
 
 [**ElectroDragon (EDS) LCD Displays SPI SD-Card Touch Size 1.8 to 4.0 inches**](https://www.electrodragon.com/product/eds-tft-lcd-lcm-spi-interface-variable1-82-2/)
