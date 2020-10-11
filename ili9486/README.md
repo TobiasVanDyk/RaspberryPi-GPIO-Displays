@@ -188,6 +188,8 @@ Problems with these SPI LCD displays have been mentioned on the main [**Raspberr
  ### Waveshare 3.5" Type (B) revision 2 LCD and Arduino Teensy
 Connection details are as below for a Teensy 3.6 using the Adafruit ILI9486 library. Waveshare 3.5" LCD (B) rev 2 for raspberry Pi (ILI9486 chipset) with [Adafruit ILI9486 library](Library-LCD35inch(B)rev2-Teensy36.zip) and example graphicstest. See [LCD35inch(B)rev2-Teensy36.ino](LCD35inch(B)rev2-Teensy36.ino) for details.
 
+Also see [ImpulseAdventure Waveshare_ILI9486](https://github.com/ImpulseAdventure/Waveshare_ILI9486) for an alternate driver for this LCD.
+
 Table 2. Connect the Waveshare LCD 3,5" type (B) revision 2 display to Teensy 3.6:
 
 |   RPi LCD  | Pin  | Teensy | Pin  |  
