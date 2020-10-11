@@ -14,7 +14,7 @@
  ****************************************************/
 /////////////////////////////////////////////////////////
 // Waveshare 3.5" LCD (B) rev 2 for raspberry Pi
-// Use a ILI9486 chipset
+// Use an ILI9486 chipset
 // This is the Adafruit example graphicstest
 /////////////////////////////////////////////////////////
 // Raspberry Pi   Teensy 3.6
