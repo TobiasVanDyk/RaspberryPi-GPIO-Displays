@@ -12,7 +12,9 @@ Update 11 October 2020: Configuration details for using the Waveshare Raspberry 
 
 [**Electrodragon ILI9341 SPI Displays**](ili9341)
 
-Use with Teensy Arduino: This display is very similar to the Teensy PJRC.com ILI9341 displays, and the libraries, connection details, and configuration from there can be used unchanged. 
+Use with a Teensy Arduino: This display is very similar to the Teensy PJRC.com ILI9341 displays, and the libraries, connection details, and configuration from there can be used unchanged. 
+
+Use with a Raspberry Pi: This display is easy to connect and use as an SPI Raspberry Pi LCD. Follow the instructions in that section. 
 
 [**Waveshare ILI9340/1 SPI Display**](ili9341)
 
