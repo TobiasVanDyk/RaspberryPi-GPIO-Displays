@@ -12,15 +12,9 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
-
-
-#include "SPI.h"
-#include "Adafruit_GFX.h"
-#include "Adafruit_ILI9341.h"
-
 /////////////////////////////////////////////////////////
 // Waveshare 3.2" LCD (b) rev 4 for raspberry Pi
-// Use a ILI9340/41 chipset
+// Use an ILI9340/41 chipset
 // This is the Adafruit example graphicstest
 /////////////////////////////////////////////////////////
 // Raspberry Pi   Teensy 3.6
@@ -34,6 +28,11 @@
 // 2   5v         +5volt
 // 6   GND        GND (not AGND)
 /////////////////////////////////////////////////////////
+
+#include "SPI.h"
+#include "Adafruit_GFX.h"
+#include "Adafruit_ILI9341.h"
+
 // For the Adafruit shield, these are the default.
 #define TFT_DC 9
 #define TFT_CS 10
