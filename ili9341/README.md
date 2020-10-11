@@ -10,9 +10,9 @@
 
 The EDS 2.2" and 2.4" and 2.8" and 3.2" inch displays are ILI9341 at 320x240. Only the 2.2" has no resistive touch overlay.
 
-This display is very similar to the Teensy PJRC.com ILI9341 displays, and the libraries, connection details, and configuration from there can be used unchanged. Refer to [Color 320x240 Touchscreen, 2.8 inch, ILI9341 Controller](https://www.pjrc.com/store/display_ili9341_touch.html) and [Color 320x240 Display, 2.2 inch, ILI9341 Controller](https://www.pjrc.com/store/display_ili9341.html).
+**Use with Teensy Arduino:** This display is very similar to the Teensy PJRC.com ILI9341 displays, and the libraries, connection details, and configuration from there can be used unchanged. Refer to [Color 320x240 Touchscreen, 2.8 inch, ILI9341 Controller](https://www.pjrc.com/store/display_ili9341_touch.html) and [Color 320x240 Display, 2.2 inch, ILI9341 Controller](https://www.pjrc.com/store/display_ili9341.html).
 <p align="left">
-<img src="images/ILI9341Teensy.jpg" width="300" />  
+<img src="images/ILI9341Teensy.jpg" width="400" />  
 <br>
 
 **2.4 inch Model 320x240:** 
