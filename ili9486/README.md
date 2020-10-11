@@ -1,5 +1,8 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
+**Update 10 October 2020:** <br>
+**Configuration details for using the Waveshare Raspberry Pi ILI9486 3.5" Type (B) revision 2 LCD with the Arduino Teensy 3.6.** Details are at the end of this page.
+
 **Update 27 Sep 2020:** <br>
 [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).<br>
 [**GoodTFT also updated their LCDshow dtb drivers**](https://github.com/goodtft/LCD-show).
