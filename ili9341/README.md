@@ -1,7 +1,7 @@
 # ILI9341 Displays
 
 **Update 10 October 2020:** <br>
-**Configuration details for using the Waveshare Raspberry Pi ILI9341 3.2" LCB (B) revision 2 with the Arduino Teensy 3.6.** Details are at the end of this page.
+**Configuration details for using the Waveshare Raspberry Pi ILI9341 3.2" Type (B) version 4 LCD with the Arduino Teensy 3.6.** Details are at the end of this page.
 
 **Update 27 September 2020:** <br>
 [**Waveshare have updated all their newer LCD display-dtbs to work with kernel 5.45**](https://github.com/waveshare/LCD-show).
