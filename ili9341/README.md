@@ -128,7 +128,7 @@ Table 2. Connect the Waveshare LCD type (B) display to Teensy 3.6:
 | GPIO27     | 13	  | Reset  | 8    | 
     
 
-The result is as shown below:
+The working result is as shown below:
 <p align="left">
 <img src="images/LCD-B-Teensy36.jpg" width="300" />  
 <br>
