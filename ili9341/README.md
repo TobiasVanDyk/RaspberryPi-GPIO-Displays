@@ -80,6 +80,7 @@ The [**Waveshare 3.2" B display**](https://www.waveshare.com/wiki/3.2inch_RPi_LC
 <img src="images/Waveshare32LCDbPins.jpg" width="200" /> 
 <img src="images/Backlcd32b.jpg" width="200" />  
 <img src="images/Frontlcd32b.jpg" width="200" />
+<img src="images/Waveshare32LCDbSchematic.jpg" width="200" /> 
 <br>
 I used a nightly kernel 2020-08-20-raspios-buster-nightly-armhf.img, and the results are as below for 320x240 resolution (LCD only display):
 <p align="left">
