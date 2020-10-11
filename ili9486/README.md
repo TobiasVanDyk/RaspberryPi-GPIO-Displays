@@ -180,4 +180,24 @@ Problems with these SPI LCD displays have been mentioned on the main [**Raspberr
 [**Zaryob: I just changed values of reset-gpios and pendown-gpio from 0x00 to 0x01**](https://github.com/waveshare/LCD-show/pull/30)
 
 
+ ### Waveshare 3.5" Type (B) revision 2 LCD and Arduino Teensy
+Connection details are as below for a Teensy 3.6 using the Adafruit ILI9486 library. Waveshare 3.5" LCD (B) rev 2 for raspberry Pi (ILI9486 chipset) with [Adafruit ILI9486 library](Library-LCD35inch(B)rev2-Teensy36.zip) and example graphicstest. See [LCD35inch(B)rev2-Teensy36.ino](LCD35inch(B)rev2-Teensy36.ino) for details.
+
+Table 2. Connect the Waveshare LCD 3,5" type (B) revision 2 display to Teensy 3.6:
+
+|   RPi LCD  | Pin  | Teensy | Pin  |  
+|------------|------|--------|------| 
+| Vcc +5v    | 2 	| +5v    | 5v   |
+| Gnd 	     | 6    | Gnd    | Gnd  |
+| SCLK       | 23 	| SCK    | 13   |
+| MISO       | 21   | MISO   | 12   |  
+| MOSI       | 19 	| MOSI   | 11   |
+| CE0        | 24	| LCD-CD | 10   | 
+| GPIO24     | 18 	| DC     | 9    |
+| GPIO25     | 22	| Reset  | 8    | 
     
+
+The working result is as shown below:
+<p align="left">
+<img src="images/LCD35inch(B)rev2-Teensy36.jpg" width="300" />  
+<br>   
