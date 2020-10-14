@@ -19,11 +19,17 @@
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
 
 The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
+
+All the comments and configuration for the two Waveshare LCDs also apply the the two LCDWiki displays [MHS3521](http://www.lcdwiki.com/MHS-3.5inch_RPi_Display) and [MPI3501(]<img src="images/Wave35b-v2.jpg" width="250" />  
+
+<img src="images/Wave35c.jpg" width="250" />  ) - as shown below on the left.
 <p align="left">
-<img src="images/Wave35b-v2.jpg" width="250" />  
-<img src="images/Wave35c.jpg" width="250" />  
+<img src="images/Wave35b-v2.jpg" width="200" />  
+<img src="images/Wave35c.jpg" width="200" />  
+<img src="images/MPI3501.jpg" width="200" />  
+<img src="images/MHS3521.jpg" width="200" />      
 <br>
-    
+       
 The set of eight photos below, show the results of using the Waveshare drivers with the (May 2020) 4.19 kernel. This can be compared to the results when using the SPI DMA accelerated driver with the new (July 2020) kernel 5.4, as detailed in the next section.
 
 In order to obtain dual (HDMI and SPI-LCD) displays, add the following lines in /boot/config.txt:
