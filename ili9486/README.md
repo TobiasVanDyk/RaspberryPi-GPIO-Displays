@@ -20,7 +20,7 @@ Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested 
 
 The two LCD displays used for the tests are the [**Waveshare display B v2 IPS 12 MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-b.htm), which is on the left below, and the [**Waveshare display C 125MHz SPI**](https://www.waveshare.com/3.5inch-rpi-lcd-c.htm) on the right.
 
-All the comments and configuration for the two Waveshare LCDs also apply the the two LCDWiki displays [**MHS3521**](http://www.lcdwiki.com/MHS-3.5inch_RPi_Display) and [**MPI3501**](http://www.lcdwiki.com/3.5inch_RPi_Display).
+All configuration details for the two Waveshare LCDs also apply the the two LCDWiki displays [**MHS3521**](http://www.lcdwiki.com/MHS-3.5inch_RPi_Display) and [**MPI3501**](http://www.lcdwiki.com/3.5inch_RPi_Display), as shown on the left below.
 
 <p align="left">
 <img src="images/Wave35b-v2.jpg" width="200" />  
