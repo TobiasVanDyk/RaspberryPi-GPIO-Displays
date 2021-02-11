@@ -5,6 +5,8 @@
 
 [**Waveshare and LCDWiki ILI9486 SPI Displays**](ili9486)
 
+[**Update 11 February 2021: The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new kernel 5.10.11.v71+. Details are at the beginning of that page.**]
+
 Update 11 October 2020: Configuration details for using the Waveshare (and LCDWiki MHS3521) Raspberry Pi ILI9486 3.5" Type (B) revision 2 LCD with the Arduino Teensy 3.6. Details are at the end of that page.
 
 
