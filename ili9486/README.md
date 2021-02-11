@@ -19,7 +19,7 @@ The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged wi
 *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
 
 ### Kernel 5.10
-A Waveshare 3.5" 480x320 ILI9486 type C display, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers. This driver functioned well when using the new (Feb 2021) Raspberry Pi Linux 5.10.11 kernel. See the two photos below.
+A Waveshare 3.5" 480x320 ILI9486 type C display, were tested with the a Raspberry Pi 4B and the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, compiled as specified in the Waveshare Wiki. This driver functioned well when using the new (Feb 2021) Raspberry Pi Linux 5.10.11 kernel. Refer to the two photos below.
 
 <p align="left">
 <img src="images/LCD-C-K51011a.png" width="350" />  
