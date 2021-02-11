@@ -1,7 +1,7 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
 **Update 11 February 2021:**<br>
-The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new **kernel 5.10.11.v71+**. Details are below.
+The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new **kernel 5.10.11.v71+**. Details are shown below.
 
 **Update 10 October 2020:** <br>
 **Configuration details for using the Waveshare Raspberry Pi ILI9486 3.5" Type (B) revision 2 LCD with the Arduino Teensy 3.6.** Details are at the end of this page.
