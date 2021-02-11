@@ -1,5 +1,8 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
+**Update 11 February 2021:**<br>
+The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new **kernel 5.10.11.v71+**. Details are below.
+
 **Update 10 October 2020:** <br>
 **Configuration details for using the Waveshare Raspberry Pi ILI9486 3.5" Type (B) revision 2 LCD with the Arduino Teensy 3.6.** Details are at the end of this page.
 
@@ -14,6 +17,14 @@
 `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays function well with the new kernel 5.4 - and tested here with the RaspberryPi 3B+ and 4B. 
 
 *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
+
+### Kernel 5.10
+A Waveshare 3.5" 480x320 ILI9486 type C display, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers. This driver functioned well when using the new (Feb 2021) Raspberry Pi Linux 5.10.11 kernel. See the two photos below.
+
+<p align="left">
+<img src="images/LCD-C-K51011a.png" width="350" />  
+<img src="images/LCD-C-K51011b.png" width="350" />  
+<br>
 
 ### Kernel 4.19
 Two Waveshare 3.5" 480x320 ILI9486 type B rev2 and type C displays, were tested with the [**Waveshare LCD-show**](https://github.com/waveshare/LCD-show) drivers, and also with three other driversets: [**GoodTFT**](https://github.com/goodtft/LCD-show) - use the MHS35-show for Waveshare (C) LCD, and [**swkim01**](https://github.com/swkim01/waveshare-dtoverlays) and [**JBTEK**](https://github.com/acidjazz/jbtekoverlay). All four driversets functioned adequately when using the previous (May 2020) Raspberry Pi Linux 4.19 kernel. None of the four driversets worked at all, with the current (July 2020) Raspberry Pi Linux kernel 5.4.
