@@ -1,0 +1,16 @@
+    1  sudo apt update
+    2  sudo apt-get full-upgrade -y
+    3  sudo reboot
+    4  scrot
+    5  sudo cp /boot/config.txt /boot/config.old
+    6  sudo cp /boot/cmdline.txt /boot/cmdline.old
+    7  sudo cp /etc/fstab /etc/fstab.old
+    8  git clone https://github.com/waveshare/LCD-show.git
+    9  cd LCD-show/
+   10  chmod +x LCD35C-show
+   11  ./LCD35C-show
+   12  sudo apt update
+   13  sudo apt-get full-upgrade -y
+   14  sudo apt --fix-broken install
+   15  history > /home/pi/documents/history.txt
+   16  history > /home/pi/Documents/history.txt

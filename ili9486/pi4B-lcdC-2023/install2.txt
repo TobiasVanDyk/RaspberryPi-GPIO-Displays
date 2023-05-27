@@ -1,0 +1,131 @@
+pi@raspberrypi:~ $ gpio -g pwm 18 1024
+bash: gpio: command not found
+pi@raspberrypi:~ $ git clone https://github.com/waveshare/LCD-show.git
+Cloning into 'LCD-show'...
+remote: Enumerating objects: 505, done.
+remote: Counting objects: 100% (74/74), done.
+remote: Compressing objects: 100% (47/47), done.
+remote: Total 505 (delta 32), reused 64 (delta 26), pack-reused 431
+Receiving objects: 100% (505/505), 5.12 MiB | 354.00 KiB/s, done.
+Resolving deltas: 100% (305/305), done.
+pi@raspberrypi:~ $ cd LCD-show/
+pi@raspberrypi:~/LCD-show $ sudo nano LCD35C-show
+pi@raspberrypi:~/LCD-show $ chmod +x LCD35C-show
+pi@raspberrypi:~/LCD-show $ ./LCD35C-show
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfuse2
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  xserver-xorg-input-evdev
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 119 kB of archives.
+After this operation, 182 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main arm64 xserver-xorg-input-evdev arm64 1:2.10.6-2 [119 kB]
+Fetched 119 kB in 1s (144 kB/s)                    
+Selecting previously unselected package xserver-xorg-input-evdev.
+(Reading database ... 156075 files and directories currently installed.)
+Preparing to unpack .../xserver-xorg-input-evdev_1%3a2.10.6-2_arm64.deb ...
+Unpacking xserver-xorg-input-evdev (1:2.10.6-2) ...
+Setting up xserver-xorg-input-evdev (1:2.10.6-2) ...
+Processing triggers for man-db (2.9.4-2) ...
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfuse2
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  cmake-data libjsoncpp24 librhash0
+Suggested packages:
+  cmake-doc ninja-build
+The following NEW packages will be installed:
+  cmake cmake-data libjsoncpp24 librhash0
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5,598 kB of archives.
+After this operation, 29.9 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main arm64 libjsoncpp24 arm64 1.9.4-4 [72.5 kB]
+Get:2 http://deb.debian.org/debian bullseye/main arm64 librhash0 arm64 1.4.1-2 [127 kB]
+Get:3 http://archive.raspberrypi.org/debian bullseye/main arm64 cmake-data all 3.18.4-2+rpt1+rpi1+deb11u1 [1,726 kB]
+Get:4 http://archive.raspberrypi.org/debian bullseye/main arm64 cmake arm64 3.18.4-2+rpt1+rpi1+deb11u1 [3,673 kB]
+Fetched 5,598 kB in 10s (533 kB/s)                                             
+Selecting previously unselected package cmake-data.
+(Reading database ... 156084 files and directories currently installed.)
+Preparing to unpack .../cmake-data_3.18.4-2+rpt1+rpi1+deb11u1_all.deb ...
+Unpacking cmake-data (3.18.4-2+rpt1+rpi1+deb11u1) ...
+Selecting previously unselected package libjsoncpp24:arm64.
+Preparing to unpack .../libjsoncpp24_1.9.4-4_arm64.deb ...
+Unpacking libjsoncpp24:arm64 (1.9.4-4) ...
+Selecting previously unselected package librhash0:arm64.
+Preparing to unpack .../librhash0_1.4.1-2_arm64.deb ...
+Unpacking librhash0:arm64 (1.4.1-2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.18.4-2+rpt1+rpi1+deb11u1_arm64.deb ...
+Unpacking cmake (3.18.4-2+rpt1+rpi1+deb11u1) ...
+Setting up libjsoncpp24:arm64 (1.9.4-4) ...
+Setting up librhash0:arm64 (1.4.1-2) ...
+Setting up cmake-data (3.18.4-2+rpt1+rpi1+deb11u1) ...
+Setting up cmake (3.18.4-2+rpt1+rpi1+deb11u1) ...
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for libc-bin (2.31-13+rpt2+rpi1+deb11u5) ...
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 10.2.1
+-- The CXX compiler identification is GNU 10.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/LCD-show/rpi-fbcp/build
+Scanning dependencies of target fbcp
+[ 50%] Building C object CMakeFiles/fbcp.dir/main.c.o
+/home/pi/LCD-show/rpi-fbcp/main.c: In function ‘process’:
+/home/pi/LCD-show/rpi-fbcp/main.c:45:9: warning: implicit declaration of function ‘ioctl’ [-Wimplicit-function-declaration]
+   45 |     if (ioctl(fbfd, FBIOGET_FSCREENINFO, &finfo)) {
+      |         ^~~~~
+[100%] Linking C executable fbcp
+[100%] Built target fbcp
+Selecting previously unselected package xinput-calibrator:armhf.
+(Reading database ... 158964 files and directories currently installed.)
+Preparing to unpack .../xinput-calibrator_0.7.5-1_armhf.deb ...
+Unpacking xinput-calibrator:armhf (0.7.5-1) ...
+dpkg: dependency problems prevent configuration of xinput-calibrator:armhf:
+ xinput-calibrator:armhf depends on libc6 (>= 2.13-28).
+ xinput-calibrator:armhf depends on libgcc1 (>= 1:4.4.0).
+ xinput-calibrator:armhf depends on libstdc++6 (>= 4.6).
+ xinput-calibrator:armhf depends on libx11-6.
+ xinput-calibrator:armhf depends on libxext6.
+ xinput-calibrator:armhf depends on libxi6 (>= 2:1.2.0).
+
+dpkg: error processing package xinput-calibrator:armhf (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for gnome-menus (3.36.0-1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+Processing triggers for mailcap (3.69) ...
+Processing triggers for man-db (2.9.4-2) ...
+Errors were encountered while processing:
+ xinput-calibrator:armhf
+LCD configure 0
+reboot now
+pi@raspberrypi:~/LCD-show $ 
