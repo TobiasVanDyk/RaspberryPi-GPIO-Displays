@@ -1,5 +1,8 @@
 # Raspberry Pi ILI9486 GPIO Displays
 
+**Update 26 May 2023:**<br>
+The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new 64bit kernel 6.1.21-v8+. Details are shown below.
+
 **Update 11 February 2021:**<br>
 The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged with the new **kernel 5.10.11.v71+**. Details are shown below.
 
@@ -17,6 +20,9 @@ The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged wi
 `There are new device tree FBCP driver files for the both the Waveshare Type C (125MHz SPI) LCD, and the Waveshare Type B revision 2 LCD`. For the first go to [**swkim01 github page**](https://github.com/swkim01/waveshare-dtoverlays), or else both LCD displays have new source (dts) and compiled (dtb) drivers here in the Waveshare folder. Both of these ILI9486 LCD displays function well with the new kernel 5.4 - and tested here with the RaspberryPi 3B+ and 4B. 
 
 *Compilation details using the latest version of dtc, to build new working drivers for kernel 5.4, are given further down this page.*
+
+### Kernel 6.1.21 64bit
+A Waveshare 3.5" 480x320 ILI9486 type C Fast-SPI display, were tested with a Raspberry Pi 4B and the current [**Waveshare LCD-show LCD35C-show**](https://github.com/waveshare/LCD-show) driver, compiled as specified in the [**Waveshare Wiki**](https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(C)) for the touch driver install (which also installs the LCD driver). On reboot the LCD showed the PiOS screen at a 480x320 resolution and the attached HDMI monitor showd the same display also at 480x320 resolution. The LCD display touch fuction worked as well. Details are in the folder [**pi4B-lcdC-2023**](/pi4B-lcdC-2023).
 
 ### Kernel 5.10
 A Waveshare 3.5" 480x320 ILI9486 type C Fast-SPI display, were tested with a Raspberry Pi 4B and the [**Waveshare LCD-show LCD35C-show**](https://github.com/waveshare/LCD-show) driver, compiled as specified in the [**Waveshare Wiki**](https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(C)). This driver functioned well when using the new (Feb 2021) Raspberry Pi Linux 5.10.11 kernel. Refer to the two photos below.
