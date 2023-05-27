@@ -25,6 +25,11 @@ The Waveshare Raspberry Pi ILI9486 3.5" Type (C) Fast-SPI LCD works unchanged wi
 A Waveshare 3.5" 480x320 ILI9486 type C Fast-SPI display, were tested with a Raspberry Pi 4B and the current [**Waveshare LCD-show LCD35C-show**](https://github.com/waveshare/LCD-show) driver, compiled as specified in the [**Waveshare Wiki**](https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(C)) for the touch driver install (which also installs the LCD driver). On reboot the LCD showed the PiOS screen at a 480x320 resolution and the attached HDMI monitor showed the same display also at 480x320 resolution. The LCD display touch fuction worked as well. Details are in the folder [**pi4B-lcdC-2023**](https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/tree/master/ili9486/pi4B-lcdC-2023).
 
 <p align="left">
+<img src="https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9486/pi4B-lcdC-2023/lcd1.png" height="220" /> 
+<img src="https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9486/pi4B-lcdC-2023/lcd2.png" height="220" /> 
+</p>
+
+<p align="left">
 <img src="https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9486/pi4B-lcdC-2023/p1.png" height="120" /> 
 <img src="https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9486/pi4B-lcdC-2023/p2.png" height="120" /> 
 <img src="https://github.com/TobiasVanDyk/RaspberryPi-GPIO-Displays/blob/master/ili9486/pi4B-lcdC-2023/p3.png" height="120" />
